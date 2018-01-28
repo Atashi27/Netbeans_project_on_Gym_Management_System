@@ -18,47 +18,43 @@ public class UserPanel extends javax.swing.JFrame {
         hometab = new javax.swing.JPanel();
         homecontent = new javax.swing.JLabel();
         memtab = new javax.swing.JPanel();
-        facility = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        memtabpackagev = new javax.swing.JTextField();
+        memtabfeesv = new javax.swing.JTextField();
+        memtabfacilityv = new javax.swing.JTextField();
         memtabdatev = new javax.swing.JTextField();
-        dateofmem = new javax.swing.JLabel();
         memtabdeadlinev = new javax.swing.JTextField();
         memdeadline = new javax.swing.JLabel();
-        showmembership = new javax.swing.JButton();
-        memtabpackagev = new javax.swing.JTextField();
         packagelevel = new javax.swing.JLabel();
-        memtabfeesv = new javax.swing.JTextField();
         fees = new javax.swing.JLabel();
-        memtabfacilityv = new javax.swing.JTextField();
+        facility = new javax.swing.JLabel();
+        dateofmem = new javax.swing.JLabel();
+        showmembership = new javax.swing.JButton();
         paytab = new javax.swing.JPanel();
-        lastdateofpayment = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        paytabstatusv = new javax.swing.JTextField();
+        paytabamountv = new javax.swing.JTextField();
+        paytablastdatev = new javax.swing.JTextField();
         paytabmodev = new javax.swing.JTextField();
+        status = new javax.swing.JLabel();
+        amount = new javax.swing.JLabel();
+        lastdateofpayment = new javax.swing.JLabel();
         modeofpayment = new javax.swing.JLabel();
         showpayment = new javax.swing.JButton();
-        paytabstatusv = new javax.swing.JTextField();
-        status = new javax.swing.JLabel();
-        paytabamountv = new javax.swing.JTextField();
-        amount = new javax.swing.JLabel();
-        paytablastdatev = new javax.swing.JTextField();
         equiptab = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        equiptabtypev = new javax.swing.JTextField();
+        equiptabrentv = new javax.swing.JTextField();
         equiptablevalidityv = new javax.swing.JTextField();
-        validity = new javax.swing.JLabel();
         equiptabrentdatev = new javax.swing.JTextField();
+        equipname = new javax.swing.JLabel();
+        equipname1 = new javax.swing.JLabel();
+        validity = new javax.swing.JLabel();
         rentaldate = new javax.swing.JLabel();
         showequipment = new javax.swing.JButton();
-        equiptabtypev = new javax.swing.JTextField();
-        equipname = new javax.swing.JLabel();
-        equiptabrentv = new javax.swing.JTextField();
-        equipname1 = new javax.swing.JLabel();
         proftab = new javax.swing.JPanel();
-        showprofile = new javax.swing.JButton();
-        name = new javax.swing.JLabel();
-        age = new javax.swing.JLabel();
-        gender = new javax.swing.JLabel();
-        height = new javax.swing.JLabel();
-        weight = new javax.swing.JLabel();
-        contact = new javax.swing.JLabel();
-        email = new javax.swing.JLabel();
-        address = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        proftabaddressv = new javax.swing.JTextField();
         proftabnamev = new javax.swing.JTextField();
         proftabagev = new javax.swing.JTextField();
         proftabgenderv = new javax.swing.JTextField();
@@ -66,7 +62,15 @@ public class UserPanel extends javax.swing.JFrame {
         proftabweightv = new javax.swing.JTextField();
         proftabcontactv = new javax.swing.JTextField();
         proftabemailv = new javax.swing.JTextField();
-        proftabaddressv = new javax.swing.JTextField();
+        weight = new javax.swing.JLabel();
+        contact = new javax.swing.JLabel();
+        email = new javax.swing.JLabel();
+        address = new javax.swing.JLabel();
+        name = new javax.swing.JLabel();
+        age = new javax.swing.JLabel();
+        gender = new javax.swing.JLabel();
+        height = new javax.swing.JLabel();
+        showprofile = new javax.swing.JButton();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         logout = new javax.swing.JButton();
@@ -101,20 +105,37 @@ public class UserPanel extends javax.swing.JFrame {
 
         tabs.addTab("Home", hometab);
 
-        facility.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        facility.setText("Facility");
+        jPanel1.setBackground(new java.awt.Color(222, 231, 231));
+
+        memtabpackagev.setEditable(false);
+        memtabpackagev.setBackground(new java.awt.Color(172, 241, 227));
+
+        memtabfeesv.setEditable(false);
+        memtabfeesv.setBackground(new java.awt.Color(172, 241, 227));
+
+        memtabfacilityv.setEditable(false);
+        memtabfacilityv.setBackground(new java.awt.Color(172, 241, 227));
 
         memtabdatev.setEditable(false);
-        memtabdatev.setBackground(new java.awt.Color(255, 255, 153));
-
-        dateofmem.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        dateofmem.setText("Date Of Membership");
+        memtabdatev.setBackground(new java.awt.Color(172, 241, 227));
 
         memtabdeadlinev.setEditable(false);
-        memtabdeadlinev.setBackground(new java.awt.Color(255, 255, 153));
+        memtabdeadlinev.setBackground(new java.awt.Color(172, 241, 227));
 
         memdeadline.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         memdeadline.setText("Membership Deadline");
+
+        packagelevel.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        packagelevel.setText("Package Level");
+
+        fees.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        fees.setText("Fees");
+
+        facility.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        facility.setText("Facility");
+
+        dateofmem.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        dateofmem.setText("Date Of Membership");
 
         showmembership.setText("Show");
         showmembership.addActionListener(new java.awt.event.ActionListener() {
@@ -123,81 +144,110 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        memtabpackagev.setEditable(false);
-        memtabpackagev.setBackground(new java.awt.Color(255, 255, 153));
-
-        packagelevel.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        packagelevel.setText("Package Level");
-
-        memtabfeesv.setEditable(false);
-        memtabfeesv.setBackground(new java.awt.Color(255, 255, 153));
-
-        fees.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        fees.setText("Fees");
-
-        memtabfacilityv.setEditable(false);
-        memtabfacilityv.setBackground(new java.awt.Color(255, 255, 153));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(packagelevel)
+                                    .addComponent(facility)
+                                    .addComponent(fees))
+                                .addGap(166, 166, 166))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(dateofmem, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(86, 86, 86))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(memdeadline, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(memtabdeadlinev)
+                            .addComponent(memtabdatev)
+                            .addComponent(memtabfeesv)
+                            .addComponent(memtabpackagev)
+                            .addComponent(memtabfacilityv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(showmembership)
+                        .addGap(241, 241, 241)))
+                .addGap(46, 46, 46))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(51, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(48, 48, 48)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(fees)
+                                    .addComponent(memtabfeesv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(packagelevel))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(facility)
+                            .addComponent(memtabfacilityv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(dateofmem)
+                            .addComponent(memtabdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(memdeadline)
+                            .addComponent(memtabdeadlinev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(memtabpackagev, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addComponent(showmembership)
+                .addGap(44, 44, 44))
+        );
 
         javax.swing.GroupLayout memtabLayout = new javax.swing.GroupLayout(memtab);
         memtab.setLayout(memtabLayout);
         memtabLayout.setHorizontalGroup(
             memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(132, 132, 132)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(packagelevel)
-                    .addComponent(facility)
-                    .addComponent(fees)
-                    .addComponent(dateofmem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(memdeadline, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE))
-                .addGap(101, 101, 101)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(memtabdeadlinev, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(memtabdatev, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(memtabfeesv, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(memtabpackagev, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(memtabfacilityv))
-                .addContainerGap(448, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, memtabLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(showmembership)
-                .addGap(92, 92, 92))
+                .addGap(235, 235, 235)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         memtabLayout.setVerticalGroup(
             memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, memtabLayout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(packagelevel)
-                    .addComponent(memtabpackagev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fees)
-                    .addComponent(memtabfeesv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(facility)
-                    .addComponent(memtabfacilityv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dateofmem)
-                    .addComponent(memtabdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(memdeadline)
-                    .addComponent(memtabdeadlinev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
-                .addComponent(showmembership)
-                .addGap(65, 65, 65))
+                .addContainerGap(73, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(116, 116, 116))
         );
 
         tabs.addTab("My Membership", memtab);
 
-        lastdateofpayment.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        lastdateofpayment.setText("Last Date Of Payment");
+        jPanel4.setBackground(new java.awt.Color(222, 231, 231));
+
+        paytabstatusv.setEditable(false);
+        paytabstatusv.setBackground(new java.awt.Color(172, 241, 227));
+
+        paytabamountv.setEditable(false);
+        paytabamountv.setBackground(new java.awt.Color(172, 241, 227));
+
+        paytablastdatev.setEditable(false);
+        paytablastdatev.setBackground(new java.awt.Color(172, 241, 227));
 
         paytabmodev.setEditable(false);
-        paytabmodev.setBackground(new java.awt.Color(255, 255, 153));
+        paytabmodev.setBackground(new java.awt.Color(172, 241, 227));
+
+        status.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        status.setText("Status");
+
+        amount.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        amount.setText("Amount");
+
+        lastdateofpayment.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        lastdateofpayment.setText("Last Date Of Payment");
 
         modeofpayment.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         modeofpayment.setText("Mode Of Payment");
@@ -209,78 +259,96 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        paytabstatusv.setEditable(false);
-        paytabstatusv.setBackground(new java.awt.Color(255, 255, 153));
-
-        status.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        status.setText("Status");
-
-        paytabamountv.setEditable(false);
-        paytabamountv.setBackground(new java.awt.Color(255, 255, 153));
-
-        amount.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        amount.setText("Amount");
-
-        paytablastdatev.setEditable(false);
-        paytablastdatev.setBackground(new java.awt.Color(255, 255, 153));
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(status)
+                    .addComponent(lastdateofpayment)
+                    .addComponent(amount)
+                    .addComponent(modeofpayment))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(paytabmodev, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(paytabamountv, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(paytabstatusv, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(paytablastdatev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(59, 59, 59))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(263, 263, 263)
+                .addComponent(showpayment)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(status)
+                        .addGap(31, 31, 31)
+                        .addComponent(amount)
+                        .addGap(32, 32, 32)
+                        .addComponent(lastdateofpayment)
+                        .addGap(30, 30, 30)
+                        .addComponent(modeofpayment))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(paytabstatusv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(paytabamountv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(paytablastdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
+                        .addComponent(paytabmodev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(showpayment)
+                .addGap(32, 32, 32))
+        );
 
         javax.swing.GroupLayout paytabLayout = new javax.swing.GroupLayout(paytab);
         paytab.setLayout(paytabLayout);
         paytabLayout.setHorizontalGroup(
             paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(paytabLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(showpayment)
-                .addGap(112, 112, 112))
-            .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(status)
-                    .addComponent(lastdateofpayment)
-                    .addComponent(amount)
-                    .addComponent(modeofpayment))
-                .addGap(96, 96, 96)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(paytabmodev, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(paytabamountv, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                    .addComponent(paytabstatusv, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(paytablastdatev))
-                .addContainerGap(448, Short.MAX_VALUE))
+                .addGap(251, 251, 251)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(268, Short.MAX_VALUE))
         );
         paytabLayout.setVerticalGroup(
             paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paytabLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(status)
-                    .addComponent(paytabstatusv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(amount)
-                    .addComponent(paytabamountv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lastdateofpayment)
-                    .addComponent(paytablastdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(paytabmodev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(modeofpayment))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE)
-                .addComponent(showpayment)
-                .addGap(78, 78, 78))
+            .addGroup(paytabLayout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(135, Short.MAX_VALUE))
         );
 
         tabs.addTab("My Payment", paytab);
 
+        jPanel3.setBackground(new java.awt.Color(222, 231, 231));
+
+        equiptabtypev.setEditable(false);
+        equiptabtypev.setBackground(new java.awt.Color(172, 241, 227));
+
+        equiptabrentv.setEditable(false);
+        equiptabrentv.setBackground(new java.awt.Color(172, 241, 227));
+
         equiptablevalidityv.setEditable(false);
-        equiptablevalidityv.setBackground(new java.awt.Color(255, 255, 153));
+        equiptablevalidityv.setBackground(new java.awt.Color(172, 241, 227));
+
+        equiptabrentdatev.setEditable(false);
+        equiptabrentdatev.setBackground(new java.awt.Color(172, 241, 227));
+
+        equipname.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        equipname.setText("Equipment Type");
+
+        equipname1.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        equipname1.setText("Rent");
 
         validity.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         validity.setText("Validity");
-
-        equiptabrentdatev.setEditable(false);
-        equiptabrentdatev.setBackground(new java.awt.Color(255, 255, 153));
 
         rentaldate.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         rentaldate.setText("Rental Date");
@@ -292,91 +360,94 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        equiptabtypev.setEditable(false);
-        equiptabtypev.setBackground(new java.awt.Color(255, 255, 153));
-
-        equipname.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        equipname.setText("Equipment Type");
-
-        equiptabrentv.setEditable(false);
-        equiptabrentv.setBackground(new java.awt.Color(255, 255, 153));
-
-        equipname1.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        equipname1.setText("Rent");
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rentaldate)
+                    .addComponent(validity, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(equipname)
+                    .addComponent(equipname1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(equiptablevalidityv)
+                    .addComponent(equiptabrentdatev)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(equiptabtypev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(68, 68, 68))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(showequipment)
+                .addGap(269, 269, 269))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(equipname)
+                        .addGap(31, 31, 31)
+                        .addComponent(equipname1)
+                        .addGap(34, 34, 34)
+                        .addComponent(validity)
+                        .addGap(37, 37, 37)
+                        .addComponent(rentaldate))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(equiptabtypev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(equiptablevalidityv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(equiptabrentdatev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(44, 44, 44)
+                .addComponent(showequipment)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout equiptabLayout = new javax.swing.GroupLayout(equiptab);
         equiptab.setLayout(equiptabLayout);
         equiptabLayout.setHorizontalGroup(
             equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, equiptabLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(showequipment)
-                .addGap(100, 100, 100))
-            .addGroup(equiptabLayout.createSequentialGroup()
-                .addGap(145, 145, 145)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(equiptabLayout.createSequentialGroup()
-                        .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rentaldate)
-                            .addComponent(validity, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(218, 218, 218)
-                        .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(equiptablevalidityv, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
-                            .addComponent(equiptabrentdatev, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)))
-                    .addGroup(equiptabLayout.createSequentialGroup()
-                        .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(equipname)
-                            .addComponent(equipname1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(205, 205, 205)
-                        .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(equiptabrentv)
-                            .addComponent(equiptabtypev, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))))
-                .addContainerGap(405, Short.MAX_VALUE))
+                .addContainerGap(257, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(255, 255, 255))
         );
         equiptabLayout.setVerticalGroup(
             equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, equiptabLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(equipname)
-                    .addComponent(equiptabtypev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(equipname1)
-                    .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(validity)
-                    .addComponent(equiptablevalidityv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rentaldate)
-                    .addComponent(equiptabrentdatev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
-                .addComponent(showequipment)
-                .addGap(88, 88, 88))
+            .addGroup(equiptabLayout.createSequentialGroup()
+                .addGap(84, 84, 84)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         tabs.addTab("My Equipment", equiptab);
 
-        showprofile.setText("Show");
-        showprofile.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                showprofileActionPerformed(evt);
-            }
-        });
+        jPanel2.setBackground(new java.awt.Color(222, 231, 231));
 
-        name.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        name.setText("Name");
+        proftabaddressv.setBackground(new java.awt.Color(172, 241, 227));
 
-        age.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        age.setText("Age");
+        proftabnamev.setBackground(new java.awt.Color(172, 241, 227));
 
-        gender.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        gender.setText("Gender");
+        proftabagev.setBackground(new java.awt.Color(172, 241, 227));
 
-        height.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        height.setText("Height");
+        proftabgenderv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabheightv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabweightv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabcontactv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabemailv.setBackground(new java.awt.Color(172, 241, 227));
 
         weight.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         weight.setText("Weight");
@@ -390,111 +461,126 @@ public class UserPanel extends javax.swing.JFrame {
         address.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         address.setText("Address");
 
-        proftabnamev.setEditable(false);
-        proftabnamev.setBackground(new java.awt.Color(255, 255, 153));
+        name.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        name.setText("Name");
 
-        proftabagev.setEditable(false);
-        proftabagev.setBackground(new java.awt.Color(255, 255, 153));
+        age.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        age.setText("Age");
 
-        proftabgenderv.setEditable(false);
-        proftabgenderv.setBackground(new java.awt.Color(255, 255, 153));
+        gender.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        gender.setText("Gender");
 
-        proftabheightv.setEditable(false);
-        proftabheightv.setBackground(new java.awt.Color(255, 255, 153));
+        height.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        height.setText("Height");
 
-        proftabweightv.setEditable(false);
-        proftabweightv.setBackground(new java.awt.Color(255, 255, 153));
+        showprofile.setText("Show");
+        showprofile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showprofileActionPerformed(evt);
+            }
+        });
 
-        proftabcontactv.setEditable(false);
-        proftabcontactv.setBackground(new java.awt.Color(255, 255, 153));
-
-        proftabemailv.setEditable(false);
-        proftabemailv.setBackground(new java.awt.Color(255, 255, 153));
-
-        proftabaddressv.setEditable(false);
-        proftabaddressv.setBackground(new java.awt.Color(255, 255, 153));
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(119, 119, 119)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(email)
+                                .addGap(22, 22, 22))
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(height, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(name)
+                                .addComponent(gender)
+                                .addComponent(age))
+                            .addComponent(weight, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGap(1, 1, 1)
+                                    .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(1, 1, 1))
+                            .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(contact)
+                            .addComponent(address))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 392, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(97, 97, 97))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(288, 288, 288)
+                .addComponent(showprofile)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 29, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gender))
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(height))
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(weight))
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(contact)))
+                    .addComponent(age))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(email))
+                .addGap(31, 31, 31)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(address))
+                .addGap(15, 15, 15)
+                .addComponent(showprofile)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout proftabLayout = new javax.swing.GroupLayout(proftab);
         proftab.setLayout(proftabLayout);
         proftabLayout.setHorizontalGroup(
             proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(showprofile)
-                .addGap(100, 100, 100))
-            .addGroup(proftabLayout.createSequentialGroup()
-                .addGap(143, 143, 143)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(proftabLayout.createSequentialGroup()
-                            .addComponent(weight, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(proftabLayout.createSequentialGroup()
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(address)
-                                .addComponent(email)
-                                .addComponent(contact))
-                            .addGap(142, 142, 142)
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(proftabLayout.createSequentialGroup()
-                        .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(height, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(name)
-                            .addComponent(gender)
-                            .addComponent(age))
-                        .addGap(148, 148, 148)
-                        .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(1, 1, 1))
-                            .addComponent(proftabheightv, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(541, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(200, 200, 200))
         );
         proftabLayout.setVerticalGroup(
             proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(59, Short.MAX_VALUE)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name)
-                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(age)
-                    .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(gender)
-                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(height)
-                    .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(weight)
-                    .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(contact)
-                    .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(email)
-                    .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(address)
-                    .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addComponent(showprofile)
-                .addGap(37, 37, 37))
+                .addContainerGap(52, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
         );
 
         tabs.addTab("My Profile", proftab);
@@ -533,14 +619,14 @@ public class UserPanel extends javax.swing.JFrame {
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerLayout.createSequentialGroup()
-                .addGap(104, 104, 104)
-                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(logout)
-                    .addComponent(moto))
+                .addGap(107, 107, 107)
+                .addComponent(moto)
                 .addContainerGap(26, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(gymnametitle, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(logout)
+                    .addComponent(gymnametitle, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -720,6 +806,10 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel height;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lastdateofpayment;
     private javax.swing.JButton logout;
     private javax.swing.JLabel memdeadline;

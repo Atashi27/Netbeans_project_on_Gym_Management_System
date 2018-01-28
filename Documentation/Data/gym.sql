@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 07, 2017 at 06:12 PM
+-- Generation Time: Jan 28, 2018 at 02:07 PM
 -- Server version: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `DateOfMem` date DEFAULT NULL,
   `MemDeadline` int(5) DEFAULT NULL,
   PRIMARY KEY (`CID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customer`
@@ -138,27 +138,28 @@ CREATE TABLE IF NOT EXISTS `equipment` (
   `MaintainenceCost` int(10) DEFAULT NULL,
   `Warranty` int(5) DEFAULT NULL,
   `Price` int(10) DEFAULT NULL,
-  `Type` varchar(30) DEFAULT NULL,
+  `EName` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `Quantity` int(11) NOT NULL,
   `RentalAmount` int(10) DEFAULT NULL,
   `FloorArea` int(5) DEFAULT NULL,
   PRIMARY KEY (`EID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `equipment`
 --
 
-INSERT INTO `equipment` (`EID`, `MaintainenceCost`, `Warranty`, `Price`, `Type`, `RentalAmount`, `FloorArea`) VALUES
-(1, 1000, 5, 15000, 'Bench Press', 300, 4),
-(2, 1000, 5, 25000, 'Hammer Strength machine', 300, 5),
-(3, 700, 2, 20000, 'Reverse hyper', 200, 5),
-(4, 800, 2, 15000, 'Hammer Strength machine', 200, 2),
-(5, 1200, 3, 25000, 'Leg Curl machine', 350, 5),
-(6, 700, 3, 20000, 'Leg press machine', 150, 6),
-(7, 2500, 3, 60000, 'Squat Rack', 450, 10),
-(8, 500, 1, 10000, 'Air resistance exercise bike', 100, 2),
-(9, 1000, 2, 20000, 'Treadmill', 300, 5),
-(10, 2000, 3, 40000, 'Spin Bike', 350, 4);
+INSERT INTO `equipment` (`EID`, `MaintainenceCost`, `Warranty`, `Price`, `EName`, `Quantity`, `RentalAmount`, `FloorArea`) VALUES
+(1, 1000, 5, 15000, 'Bench Press', 1, 300, 4),
+(2, 1000, 5, 25000, 'Hammer Strength machine', 1, 300, 5),
+(3, 700, 2, 20000, 'Reverse hyper', 3, 200, 5),
+(4, 800, 2, 15000, 'Hammer Strength machine', 2, 200, 2),
+(5, 1200, 3, 25000, 'Leg Curl machine', 1, 350, 5),
+(6, 700, 3, 20000, 'Leg press machine', 3, 150, 6),
+(7, 2500, 3, 60000, 'Squat Rack', 1, 450, 10),
+(8, 500, 1, 10000, 'Air resistance exercise bike', 5, 100, 2),
+(9, 1000, 2, 20000, 'Treadmill', 1, 300, 5),
+(10, 2000, 3, 40000, 'Spin Bike', 1, 350, 4);
 
 -- --------------------------------------------------------
 
@@ -199,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `payment` (
   `ModeOfPayment` varchar(20) DEFAULT NULL,
   `CID` int(5) DEFAULT NULL,
   PRIMARY KEY (`PID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `payment`
@@ -210,7 +211,8 @@ INSERT INTO `payment` (`PID`, `Status`, `Amount`, `LastDateOfPayment`, `ModeOfPa
 (2, 'Pending', 8000, '2017-09-10', 'Debit card', 2),
 (3, 'Clear', 0, '2017-09-10', 'Debit card', 3),
 (4, 'Pending', 1000, '2017-09-10', 'Cash', 4),
-(5, 'Pending', 10000, '2017-09-10', 'Cash', 5);
+(5, 'Pending', 10000, '2017-09-10', 'Cash', 5),
+(9, 'Pending', 45000, NULL, NULL, 8);
 
 --
 -- Triggers `payment`
@@ -342,6 +344,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`Username`, `Password`, `IsCustomer`) VALUES
 ('Akshay', 'a@123', 1),
+('dasda', '', 1),
 ('Krushika', 'qwerty', 1),
 ('Ramesh', 'star', 1),
 ('Sahana', 'asdfg', 1),

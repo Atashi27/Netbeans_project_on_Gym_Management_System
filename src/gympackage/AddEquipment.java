@@ -16,12 +16,12 @@ ResultSet rs=null;
     private void initComponents() {
 
         rentalamount = new javax.swing.JPanel();
-        etype = new javax.swing.JLabel();
+        ename = new javax.swing.JLabel();
         price = new javax.swing.JLabel();
         floorarea = new javax.swing.JLabel();
         maintainancecost = new javax.swing.JLabel();
         warranty = new javax.swing.JLabel();
-        jtxtEquipmentType = new javax.swing.JTextField();
+        jtxtQuantity = new javax.swing.JTextField();
         jtxtWarranty = new javax.swing.JTextField();
         jtxtMaintainanceCost = new javax.swing.JTextField();
         jtxtFloorArea = new javax.swing.JTextField();
@@ -30,6 +30,8 @@ ResultSet rs=null;
         jbtnSubmit = new javax.swing.JButton();
         rent = new javax.swing.JLabel();
         jtxtrent = new javax.swing.JTextField();
+        quant = new javax.swing.JLabel();
+        jtxtEName = new javax.swing.JTextField();
         header = new javax.swing.JLabel();
         back = new javax.swing.JButton();
 
@@ -37,8 +39,8 @@ ResultSet rs=null;
 
         rentalamount.setBackground(new java.awt.Color(255, 255, 255));
 
-        etype.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        etype.setText("Equipment Type");
+        ename.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        ename.setText("Equipment Name");
 
         price.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         price.setText("Price");
@@ -52,8 +54,8 @@ ResultSet rs=null;
         warranty.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         warranty.setText("Warranty");
 
-        jtxtEquipmentType.setBackground(new java.awt.Color(204, 255, 204));
-        jtxtEquipmentType.setBorder(null);
+        jtxtQuantity.setBackground(new java.awt.Color(204, 255, 204));
+        jtxtQuantity.setBorder(null);
 
         jtxtWarranty.setBackground(new java.awt.Color(204, 255, 204));
         jtxtWarranty.setBorder(null);
@@ -89,41 +91,57 @@ ResultSet rs=null;
         jtxtrent.setBackground(new java.awt.Color(204, 255, 204));
         jtxtrent.setBorder(null);
 
+        quant.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        quant.setText("Quantity");
+
+        jtxtEName.setBackground(new java.awt.Color(204, 255, 204));
+        jtxtEName.setBorder(null);
+
         javax.swing.GroupLayout rentalamountLayout = new javax.swing.GroupLayout(rentalamount);
         rentalamount.setLayout(rentalamountLayout);
         rentalamountLayout.setHorizontalGroup(
             rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rentalamountLayout.createSequentialGroup()
-                .addGap(199, 199, 199)
+                .addContainerGap(233, Short.MAX_VALUE)
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rent)
-                    .addGroup(rentalamountLayout.createSequentialGroup()
-                        .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jbtnSubmit)
-                            .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(warranty)
-                                .addComponent(maintainancecost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(floorarea)
-                                .addComponent(etype, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentalamountLayout.createSequentialGroup()
+                        .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rent)
+                            .addGroup(rentalamountLayout.createSequentialGroup()
+                                .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(warranty)
+                                    .addComponent(maintainancecost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(floorarea)
+                                    .addComponent(ename, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(quant, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(117, 117, 117)
+                                .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jtxtWarranty)
+                                    .addComponent(jtxtMaintainanceCost)
+                                    .addComponent(jtxtFloorArea)
+                                    .addComponent(jtxtPrice)
+                                    .addComponent(jtxtQuantity)
+                                    .addComponent(jtxtrent)
+                                    .addComponent(jtxtEName, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(208, 208, 208))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rentalamountLayout.createSequentialGroup()
+                        .addComponent(jbtnSubmit)
                         .addGap(117, 117, 117)
-                        .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jtxtWarranty, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(jtxtMaintainanceCost, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(jtxtFloorArea, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(jtxtPrice, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(jtxtEquipmentType, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(jtxtrent)
-                            .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(242, Short.MAX_VALUE))
+                        .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(297, 297, 297))))
         );
         rentalamountLayout.setVerticalGroup(
             rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rentalamountLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(etype, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtxtEquipmentType, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ename, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtxtEName, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(quant, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtxtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(price, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -134,8 +152,8 @@ ResultSet rs=null;
                     .addComponent(jtxtFloorArea, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(maintainancecost, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                    .addComponent(jtxtMaintainanceCost))
+                    .addComponent(maintainancecost, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jtxtMaintainanceCost, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(warranty)
@@ -144,11 +162,11 @@ ResultSet rs=null;
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jtxtrent, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rent, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addGap(42, 42, 42)
                 .addGroup(rentalamountLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(105, 105, 105))
+                .addGap(93, 93, 93))
         );
 
         header.setFont(new java.awt.Font("Times New Roman", 2, 48)); // NOI18N
@@ -186,9 +204,9 @@ ResultSet rs=null;
                 .addComponent(header)
                 .addGap(18, 18, 18)
                 .addComponent(rentalamount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(back)
-                .addGap(29, 29, 29))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -199,7 +217,8 @@ ResultSet rs=null;
     }//GEN-LAST:event_backActionPerformed
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
-        jtxtEquipmentType.setText(null);
+        jtxtQuantity.setText(null);
+        jtxtEName.setText(null);
         jtxtFloorArea.setText(null);
         jtxtMaintainanceCost.setText(null);
         jtxtPrice.setText(null);
@@ -210,15 +229,16 @@ ResultSet rs=null;
 
     private void jbtnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSubmitActionPerformed
         conn=MysqlConnect.ConnectDB();
-        String Sql="Insert into equipment(MaintainenceCost,Warranty,Price,Type,RentalAmount,FloorArea) values (?,?,?,?,?,?)";
+        String Sql="Insert into equipment(MaintainenceCost,Warranty,Price,EName,Quantity,RentalAmount,FloorArea) values (?,?,?,?,?,?,?)";
         try{
             pst=conn.prepareStatement(Sql);
             pst.setString(1,jtxtMaintainanceCost.getText());
             pst.setString(2,jtxtWarranty.getText());
             pst.setString(3,jtxtPrice.getText());
-            pst.setString(4,jtxtEquipmentType.getText());
-            pst.setString(5,jtxtrent.getText());
-            pst.setString(6,jtxtFloorArea.getText());
+            pst.setString(4,jtxtEName.getText());
+            pst.setString(5,jtxtQuantity.getText());
+            pst.setString(6,jtxtrent.getText());
+            pst.setString(7,jtxtFloorArea.getText());
             pst.executeUpdate();
             JOptionPane.showMessageDialog(null,"Entry Successful...!");
             this.dispose();
@@ -238,19 +258,21 @@ ResultSet rs=null;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton back;
-    private javax.swing.JLabel etype;
+    private javax.swing.JLabel ename;
     private javax.swing.JLabel floorarea;
     private javax.swing.JLabel header;
     private javax.swing.JButton jbtnReset;
     private javax.swing.JButton jbtnSubmit;
-    private javax.swing.JTextField jtxtEquipmentType;
+    private javax.swing.JTextField jtxtEName;
     private javax.swing.JTextField jtxtFloorArea;
     private javax.swing.JTextField jtxtMaintainanceCost;
     private javax.swing.JTextField jtxtPrice;
+    private javax.swing.JTextField jtxtQuantity;
     private javax.swing.JTextField jtxtWarranty;
     private javax.swing.JTextField jtxtrent;
     private javax.swing.JLabel maintainancecost;
     private javax.swing.JLabel price;
+    private javax.swing.JLabel quant;
     private javax.swing.JLabel rent;
     private javax.swing.JPanel rentalamount;
     private javax.swing.JLabel warranty;

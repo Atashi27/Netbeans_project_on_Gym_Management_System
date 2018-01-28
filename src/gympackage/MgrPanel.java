@@ -40,22 +40,20 @@ String thisuser=Login.username;
         addclass = new javax.swing.JButton();
         proftab = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        proftabheightv = new javax.swing.JTextField();
+        proftabtimings = new javax.swing.JTextField();
         proftabnamev = new javax.swing.JTextField();
-        proftabweightv = new javax.swing.JTextField();
+        proftabexperience = new javax.swing.JTextField();
         proftabagev = new javax.swing.JTextField();
-        proftabcontactv = new javax.swing.JTextField();
-        proftabgenderv = new javax.swing.JTextField();
-        proftabemailv = new javax.swing.JTextField();
-        proftabaddressv = new javax.swing.JTextField();
-        email = new javax.swing.JLabel();
-        gender = new javax.swing.JLabel();
-        address = new javax.swing.JLabel();
-        height = new javax.swing.JLabel();
+        proftabdesignation = new javax.swing.JTextField();
+        proftabsalary = new javax.swing.JTextField();
+        proftabareaofexpertise = new javax.swing.JTextField();
+        areaofexpertise = new javax.swing.JLabel();
+        salary = new javax.swing.JLabel();
+        timings = new javax.swing.JLabel();
         name = new javax.swing.JLabel();
-        weight = new javax.swing.JLabel();
+        experience = new javax.swing.JLabel();
         age = new javax.swing.JLabel();
-        contact = new javax.swing.JLabel();
+        designation = new javax.swing.JLabel();
         showprofile = new javax.swing.JButton();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
@@ -330,53 +328,47 @@ String thisuser=Login.username;
 
         jPanel1.setBackground(new java.awt.Color(222, 231, 231));
 
-        proftabheightv.setEditable(false);
-        proftabheightv.setBackground(new java.awt.Color(172, 241, 227));
+        proftabtimings.setEditable(false);
+        proftabtimings.setBackground(new java.awt.Color(172, 241, 227));
 
         proftabnamev.setEditable(false);
         proftabnamev.setBackground(new java.awt.Color(172, 241, 227));
 
-        proftabweightv.setEditable(false);
-        proftabweightv.setBackground(new java.awt.Color(172, 241, 227));
+        proftabexperience.setEditable(false);
+        proftabexperience.setBackground(new java.awt.Color(172, 241, 227));
 
         proftabagev.setEditable(false);
         proftabagev.setBackground(new java.awt.Color(172, 241, 227));
 
-        proftabcontactv.setEditable(false);
-        proftabcontactv.setBackground(new java.awt.Color(172, 241, 227));
+        proftabdesignation.setEditable(false);
+        proftabdesignation.setBackground(new java.awt.Color(172, 241, 227));
 
-        proftabgenderv.setEditable(false);
-        proftabgenderv.setBackground(new java.awt.Color(172, 241, 227));
+        proftabsalary.setEditable(false);
+        proftabsalary.setBackground(new java.awt.Color(172, 241, 227));
 
-        proftabemailv.setEditable(false);
-        proftabemailv.setBackground(new java.awt.Color(172, 241, 227));
+        proftabareaofexpertise.setEditable(false);
+        proftabareaofexpertise.setBackground(new java.awt.Color(172, 241, 227));
 
-        proftabaddressv.setEditable(false);
-        proftabaddressv.setBackground(new java.awt.Color(172, 241, 227));
+        areaofexpertise.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        areaofexpertise.setText("Area Of Expertise");
 
-        email.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        email.setText("Email");
+        salary.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        salary.setText("Salary");
 
-        gender.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        gender.setText("Gender");
-
-        address.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        address.setText("Address");
-
-        height.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        height.setText("Height");
+        timings.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        timings.setText("Timings");
 
         name.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         name.setText("Name");
 
-        weight.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        weight.setText("Weight");
+        experience.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        experience.setText("Experience");
 
         age.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         age.setText("Age");
 
-        contact.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        contact.setText("Contact");
+        designation.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        designation.setText("Designation");
 
         showprofile.setText("Show");
         showprofile.addActionListener(new java.awt.event.ActionListener() {
@@ -393,48 +385,44 @@ String thisuser=Login.username;
                 .addGap(87, 87, 87)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(address)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(age)
                             .addComponent(name)
-                            .addComponent(gender)
-                            .addComponent(height, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+                            .addComponent(salary)
+                            .addComponent(timings, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
                         .addGap(148, 148, 148))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(contact)
-                            .addComponent(weight, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(email))
+                            .addComponent(designation)
+                            .addComponent(areaofexpertise)
+                            .addComponent(experience, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(1, 1, 1)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(proftabtimings, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(proftabexperience, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(proftabaddressv)
-                            .addComponent(proftabemailv)
-                            .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(proftabareaofexpertise)
+                            .addComponent(proftabdesignation, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(proftabnamev)
-                            .addComponent(proftabgenderv)
+                            .addComponent(proftabsalary)
                             .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(88, 88, 88))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(254, 254, 254)
+                .addGap(262, 262, 262)
                 .addComponent(showprofile)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(name))
@@ -444,31 +432,27 @@ String thisuser=Login.username;
                     .addComponent(age))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(gender))
+                    .addComponent(proftabsalary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(salary))
                 .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(height))
+                    .addComponent(proftabtimings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(timings))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(weight))
+                    .addComponent(proftabexperience, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(experience))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(contact))
+                    .addComponent(proftabdesignation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(designation))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(email))
-                .addGap(32, 32, 32)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(address))
-                .addGap(10, 10, 10)
+                    .addComponent(proftabareaofexpertise, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(areaofexpertise))
+                .addGap(56, 56, 56)
                 .addComponent(showprofile)
-                .addGap(24, 24, 24))
+                .addGap(34, 34, 34))
         );
 
         javax.swing.GroupLayout proftabLayout = new javax.swing.GroupLayout(proftab);
@@ -485,7 +469,7 @@ String thisuser=Login.username;
             .addGroup(proftabLayout.createSequentialGroup()
                 .addGap(45, 45, 45)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         tabs.addTab("My Profile", proftab);
@@ -558,89 +542,88 @@ String thisuser=Login.username;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void addcustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addcustomerActionPerformed
-        AddCustomer w=new AddCustomer();
-        w.setVisible(true);
-    }//GEN-LAST:event_addcustomerActionPerformed
-
-    private void addequipmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addequipmentActionPerformed
-        AddEquipment w=new AddEquipment();
-        w.setVisible(true);
-    }//GEN-LAST:event_addequipmentActionPerformed
-
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         Login w=new Login();
         w.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logoutActionPerformed
 
-    private void viewcustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewcustomerActionPerformed
-        ViewCustomer w=new ViewCustomer();
-        w.setVisible(true);
-    }//GEN-LAST:event_viewcustomerActionPerformed
-
-    private void viewequipmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewequipmentActionPerformed
-        ViewEquipment w=new ViewEquipment();
-        w.setVisible(true);
-    }//GEN-LAST:event_viewequipmentActionPerformed
-
-    private void acceptpaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptpaymentActionPerformed
-        AcceptPayment w=new AcceptPayment();
-        w.setVisible(true);
-    }//GEN-LAST:event_acceptpaymentActionPerformed
-
-    private void addstaffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addstaffActionPerformed
-        AddStaff w=new AddStaff();
-        w.setVisible(true);
-    }//GEN-LAST:event_addstaffActionPerformed
-
-    private void upgrademembershipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upgrademembershipActionPerformed
-        UpgradeMembership w=new UpgradeMembership();
-        w.setVisible(true);
-    }//GEN-LAST:event_upgrademembershipActionPerformed
-
-    private void viewpaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewpaymentActionPerformed
-        ViewPayment w=new ViewPayment();
-        w.setVisible(true);
-    }//GEN-LAST:event_viewpaymentActionPerformed
-
     private void addclassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addclassActionPerformed
         CreateClass w=new CreateClass();
         w.setVisible(true);
     }//GEN-LAST:event_addclassActionPerformed
-
-    private void viewstaffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewstaffActionPerformed
-        ViewStaff w= new ViewStaff();
-        w.setVisible(true);
-    }//GEN-LAST:event_viewstaffActionPerformed
 
     private void viewclassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewclassActionPerformed
         ViewClass w=new ViewClass();
         w.setVisible(true);
     }//GEN-LAST:event_viewclassActionPerformed
 
+    private void addstaffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addstaffActionPerformed
+        AddStaff w=new AddStaff();
+        w.setVisible(true);
+    }//GEN-LAST:event_addstaffActionPerformed
+
+    private void viewstaffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewstaffActionPerformed
+        ViewStaff w= new ViewStaff();
+        w.setVisible(true);
+    }//GEN-LAST:event_viewstaffActionPerformed
+
+    private void acceptpaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptpaymentActionPerformed
+        AcceptPayment w=new AcceptPayment();
+        w.setVisible(true);
+    }//GEN-LAST:event_acceptpaymentActionPerformed
+
+    private void viewpaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewpaymentActionPerformed
+        ViewPayment w=new ViewPayment();
+        w.setVisible(true);
+    }//GEN-LAST:event_viewpaymentActionPerformed
+
+    private void upgrademembershipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upgrademembershipActionPerformed
+        UpgradeMembership w=new UpgradeMembership();
+        w.setVisible(true);
+    }//GEN-LAST:event_upgrademembershipActionPerformed
+
     private void viewmembershipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewmembershipActionPerformed
         ViewMembership w=new ViewMembership();
         w.setVisible(true);
     }//GEN-LAST:event_viewmembershipActionPerformed
 
+    private void viewequipmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewequipmentActionPerformed
+        ViewEquipment w=new ViewEquipment();
+        w.setVisible(true);
+    }//GEN-LAST:event_viewequipmentActionPerformed
+
+    private void addequipmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addequipmentActionPerformed
+        AddEquipment w=new AddEquipment();
+        w.setVisible(true);
+    }//GEN-LAST:event_addequipmentActionPerformed
+
+    private void viewcustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewcustomerActionPerformed
+        ViewCustomer w=new ViewCustomer();
+        w.setVisible(true);
+    }//GEN-LAST:event_viewcustomerActionPerformed
+
+    private void addcustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addcustomerActionPerformed
+        AddCustomer w=new AddCustomer();
+        w.setVisible(true);
+    }//GEN-LAST:event_addcustomerActionPerformed
+
     private void showprofileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showprofileActionPerformed
         conn=MysqlConnect.ConnectDB();
-        String Sql="Select * from customer where CName=?";
+        String Sql="Select * from staff where SName=?";
         try{
             pst=conn.prepareStatement(Sql);
             pst.setString(1,thisuser);
             rs=pst.executeQuery();
             if(rs.next()){
                 proftabnamev.setText(rs.getString(2));
-                proftabagev.setText(rs.getString(3));
-                proftabcontactv.setText(rs.getString(4));
-                proftabemailv.setText(rs.getString(5));
-                proftabaddressv.setText(rs.getString(6));
-                proftabgenderv.setText(rs.getString(7));
-                proftabheightv.setText(rs.getString(8));
-                proftabweightv.setText(rs.getString(9));
-                }
+                proftabagev.setText(rs.getString(3)+" years");
+                proftabsalary.setText(rs.getString(4)+" INR");
+                proftabtimings.setText(rs.getString(5));
+                proftabexperience.setText(rs.getString(6)+" years");
+                proftabdesignation.setText(rs.getString(7));
+                proftabareaofexpertise.setText(rs.getString(8));
+            }
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,e);
@@ -660,18 +643,16 @@ String thisuser=Login.username;
     private javax.swing.JButton addclass;
     private javax.swing.JButton addcustomer;
     private javax.swing.JButton addequipment;
-    private javax.swing.JLabel address;
     private javax.swing.JButton addstaff;
     private javax.swing.JLabel age;
+    private javax.swing.JLabel areaofexpertise;
     private javax.swing.JPanel classtab;
-    private javax.swing.JLabel contact;
     private javax.swing.JPanel custtab;
-    private javax.swing.JLabel email;
+    private javax.swing.JLabel designation;
     private javax.swing.JPanel equiptab;
-    private javax.swing.JLabel gender;
+    private javax.swing.JLabel experience;
     private javax.swing.JLabel gymnametitle;
     private javax.swing.JPanel header;
-    private javax.swing.JLabel height;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
     private javax.swing.JLabel jLabel2;
@@ -681,17 +662,18 @@ String thisuser=Login.username;
     private javax.swing.JLabel name;
     private javax.swing.JPanel paytab;
     private javax.swing.JPanel proftab;
-    private javax.swing.JTextField proftabaddressv;
     private javax.swing.JTextField proftabagev;
-    private javax.swing.JTextField proftabcontactv;
-    private javax.swing.JTextField proftabemailv;
-    private javax.swing.JTextField proftabgenderv;
-    private javax.swing.JTextField proftabheightv;
+    private javax.swing.JTextField proftabareaofexpertise;
+    private javax.swing.JTextField proftabdesignation;
+    private javax.swing.JTextField proftabexperience;
     private javax.swing.JTextField proftabnamev;
-    private javax.swing.JTextField proftabweightv;
+    private javax.swing.JTextField proftabsalary;
+    private javax.swing.JTextField proftabtimings;
+    private javax.swing.JLabel salary;
     private javax.swing.JButton showprofile;
     private javax.swing.JPanel stafftab;
     private javax.swing.JTabbedPane tabs;
+    private javax.swing.JLabel timings;
     private javax.swing.JButton upgrademembership;
     private javax.swing.JButton viewclass;
     private javax.swing.JButton viewcustomer;
@@ -699,6 +681,5 @@ String thisuser=Login.username;
     private javax.swing.JButton viewmembership;
     private javax.swing.JButton viewpayment;
     private javax.swing.JButton viewstaff;
-    private javax.swing.JLabel weight;
     // End of variables declaration//GEN-END:variables
 }

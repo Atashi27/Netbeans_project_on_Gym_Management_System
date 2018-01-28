@@ -86,7 +86,7 @@ ResultSet rs=null;
     public void DisplayPaymentTable(){
     try{
         conn=MysqlConnect.ConnectDB();
-        String Sql="Select (Select CName from customer where CID=a.CID) as 'Customer Name',Amount as 'Pending Amount',Status,LastDateOfPayment as 'Last Date Of Payment',ModeOfPayment as 'Mode Of Payment' from payment a";
+        String Sql="Select (Select CName from customer where CID=a.CID) as 'Customer Name',Amount as 'Pending Amount(INR)',Status,LastDateOfPayment as 'Last Date Of Payment',ModeOfPayment as 'Mode Of Payment' from payment a";
         pst=conn.prepareStatement(Sql);
         rs=pst.executeQuery();
         paymenttable.setModel(DbUtils.resultSetToTableModel(rs));

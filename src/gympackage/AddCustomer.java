@@ -263,7 +263,7 @@ ResultSet rs=null;
     private void jbtnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSubmitActionPerformed
         conn=MysqlConnect.ConnectDB();
         java.sql.Date today= new java.sql.Date(Calendar.getInstance().getTime().getTime());
-        String Sql="Insert into customer(Cname,CAge,Phone,Email,Address,Gender,Height,Weight,MEMID,DateOfMemJoin,MemDeadline) values (?,?,?,?,?,?,?,?,(Select MEMID from membership where PackageLevel=?),?,?)";
+        String Sql="Insert into customer(Cname,CAge,Phone,Email,Address,Gender,Height,Weight,MEMID,DateOfMem,MemDeadline) values (?,?,?,?,?,?,?,?,(Select MEMID from membership where PackageLevel=?),?,?)";
         try{
             pst=conn.prepareStatement(Sql);
             pst.setString(1,jtxtName.getText());

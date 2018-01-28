@@ -43,7 +43,7 @@ public class UserPanel extends javax.swing.JFrame {
         showpayment = new javax.swing.JButton();
         equiptab = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        equiptabtypev = new javax.swing.JTextField();
+        equiptabnamev = new javax.swing.JTextField();
         equiptabrentv = new javax.swing.JTextField();
         equiptablevalidityv = new javax.swing.JTextField();
         equiptabrentdatev = new javax.swing.JTextField();
@@ -329,8 +329,8 @@ public class UserPanel extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(222, 231, 231));
 
-        equiptabtypev.setEditable(false);
-        equiptabtypev.setBackground(new java.awt.Color(172, 241, 227));
+        equiptabnamev.setEditable(false);
+        equiptabnamev.setBackground(new java.awt.Color(172, 241, 227));
 
         equiptabrentv.setEditable(false);
         equiptabrentv.setBackground(new java.awt.Color(172, 241, 227));
@@ -342,7 +342,7 @@ public class UserPanel extends javax.swing.JFrame {
         equiptabrentdatev.setBackground(new java.awt.Color(172, 241, 227));
 
         equipname.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        equipname.setText("Equipment Type");
+        equipname.setText("Equipment Name");
 
         equipname1.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         equipname1.setText("Rent");
@@ -379,7 +379,7 @@ public class UserPanel extends javax.swing.JFrame {
                         .addGap(1, 1, 1)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(equiptabtypev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(equiptabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(68, 68, 68))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -400,7 +400,7 @@ public class UserPanel extends javax.swing.JFrame {
                         .addGap(37, 37, 37)
                         .addComponent(rentaldate))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(equiptabtypev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(equiptabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
                         .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(32, 32, 32)
@@ -417,7 +417,7 @@ public class UserPanel extends javax.swing.JFrame {
         equiptabLayout.setHorizontalGroup(
             equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, equiptabLayout.createSequentialGroup()
-                .addContainerGap(257, Short.MAX_VALUE)
+                .addContainerGap(248, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(255, 255, 255))
         );
@@ -670,13 +670,19 @@ public class UserPanel extends javax.swing.JFrame {
             rs=pst.executeQuery();
             if(rs.next()){
                 proftabnamev.setText(rs.getString(2));
-                proftabagev.setText(rs.getString(3));
+                proftabagev.setText(rs.getString(3)+" years");
                 proftabcontactv.setText(rs.getString(4));
                 proftabemailv.setText(rs.getString(5));
                 proftabaddressv.setText(rs.getString(6));
-                proftabgenderv.setText(rs.getString(7));
-                proftabheightv.setText(rs.getString(8));
-                proftabweightv.setText(rs.getString(9));
+                if("F".equals(rs.getString(7))){
+                    proftabgenderv.setText("Female");
+                }
+                else
+                {
+                    proftabgenderv.setText("Male");
+                }
+                proftabheightv.setText(rs.getString(8)+" cms");
+                proftabweightv.setText(rs.getString(9)+" kgs");
                 }
         }
         catch(Exception e){
@@ -693,8 +699,8 @@ public class UserPanel extends javax.swing.JFrame {
             rs=pst.executeQuery();
             if(rs.next()){
                 paytabstatusv.setText(rs.getString(2));
-                paytabamountv.setText(rs.getString(3));
-                paytablastdatev.setText(rs.getString(4));
+                paytabamountv.setText(rs.getString(3)+" INR");
+                paytablastdatev.setText(rs.getString(4)+" (yyyy-mm-dd)");
                 paytabmodev.setText(rs.getString(5));
                 }
         }
@@ -714,15 +720,15 @@ public class UserPanel extends javax.swing.JFrame {
             pst.setString(1,thisuser);
             rs=pst.executeQuery();
             if(rs.next()){
-                memtabdatev.setText(rs.getString(11));
-                memtabdeadlinev.setText(rs.getString(12));
+                memtabdatev.setText(rs.getString(11)+" (yyyy-mm-dd)");
+                memtabdeadlinev.setText(rs.getString(12)+" months");
                 id =rs.getString(10);
                 }
             pst1.setString(1,id);
             rs1=pst1.executeQuery();
             if(rs1.next()){
-                memtabfeesv.setText(rs1.getString(2));
-                memtabpackagev.setText(rs1.getString(3));
+                memtabfeesv.setText(rs1.getString(2)+" INR");
+                memtabpackagev.setText(rs1.getString(3)+" level");
                 memtabfacilityv.setText(rs1.getString(4));
             }
         }
@@ -742,15 +748,15 @@ public class UserPanel extends javax.swing.JFrame {
             pst.setString(1,thisuser);
             rs=pst.executeQuery();
             if(rs.next()){
-                equiptablevalidityv.setText(rs.getString(3));
-                equiptabrentdatev.setText(rs.getString(4));
+                equiptablevalidityv.setText(rs.getString(3)+" months");
+                equiptabrentdatev.setText(rs.getString(4)+" (yyyy-mm-dd)");
                 id =rs.getString(2);
                 }
             pst1.setString(1,id);
             rs1=pst1.executeQuery();
             if(rs1.next()){
-                equiptabtypev.setText(rs1.getString(5));
-                equiptabrentv.setText(rs1.getString(6));
+                equiptabnamev.setText(rs1.getString(5));
+                equiptabrentv.setText(rs1.getString(7)+" INR");
             }
         }
         catch(Exception e){
@@ -797,9 +803,9 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel equipname1;
     private javax.swing.JPanel equiptab;
     private javax.swing.JTextField equiptablevalidityv;
+    private javax.swing.JTextField equiptabnamev;
     private javax.swing.JTextField equiptabrentdatev;
     private javax.swing.JTextField equiptabrentv;
-    private javax.swing.JTextField equiptabtypev;
     private javax.swing.JLabel facility;
     private javax.swing.JLabel fees;
     private javax.swing.JLabel gender;

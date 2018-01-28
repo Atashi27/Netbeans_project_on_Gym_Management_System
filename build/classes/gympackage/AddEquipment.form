@@ -50,9 +50,9 @@
               <Component id="header" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="rentalamount" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="back" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -68,44 +68,57 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace pref="233" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="rent" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jbtnSubmit" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="warranty" min="-2" max="-2" attributes="0"/>
-                                  <Component id="maintainancecost" max="32767" attributes="0"/>
-                                  <Component id="floorarea" min="-2" max="-2" attributes="0"/>
-                                  <Component id="etype" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="price" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="rent" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="warranty" min="-2" max="-2" attributes="0"/>
+                                      <Component id="maintainancecost" max="32767" attributes="0"/>
+                                      <Component id="floorarea" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ename" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="price" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                                      <Component id="quant" alignment="0" min="-2" pref="194" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jtxtWarranty" max="32767" attributes="0"/>
+                                      <Component id="jtxtMaintainanceCost" max="32767" attributes="0"/>
+                                      <Component id="jtxtFloorArea" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtxtPrice" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtxtQuantity" max="32767" attributes="0"/>
+                                      <Component id="jtxtrent" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtxtEName" alignment="0" min="-2" pref="199" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jbtnSubmit" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jtxtWarranty" pref="199" max="32767" attributes="0"/>
-                              <Component id="jtxtMaintainanceCost" pref="199" max="32767" attributes="0"/>
-                              <Component id="jtxtFloorArea" alignment="0" pref="199" max="32767" attributes="0"/>
-                              <Component id="jtxtPrice" alignment="0" pref="199" max="32767" attributes="0"/>
-                              <Component id="jtxtEquipmentType" pref="199" max="32767" attributes="0"/>
-                              <Component id="jtxtrent" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jbtnReset" min="-2" pref="113" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jbtnReset" min="-2" pref="113" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="297" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="242" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="etype" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jtxtEquipmentType" min="-2" pref="38" max="-2" attributes="0"/>
+                  <EmptySpace pref="80" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="ename" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jtxtEName" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="quant" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jtxtQuantity" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -119,8 +132,8 @@
                   </Group>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="maintainancecost" pref="36" max="32767" attributes="0"/>
-                      <Component id="jtxtMaintainanceCost" max="32767" attributes="0"/>
+                      <Component id="maintainancecost" max="32767" attributes="0"/>
+                      <Component id="jtxtMaintainanceCost" min="-2" pref="36" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -132,23 +145,23 @@
                       <Component id="jtxtrent" min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="rent" min="-2" pref="42" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="71" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jbtnSubmit" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                       <Component id="jbtnReset" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="etype">
+        <Component class="javax.swing.JLabel" name="ename">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Equipment Type"/>
+            <Property name="text" type="java.lang.String" value="Equipment Name"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="price">
@@ -183,7 +196,7 @@
             <Property name="text" type="java.lang.String" value="Warranty"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jtxtEquipmentType">
+        <Component class="javax.swing.JTextField" name="jtxtQuantity">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="ff" red="cc" type="rgb"/>
@@ -264,6 +277,24 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jtxtrent">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="ff" red="cc" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="quant">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Quantity"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtxtEName">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="ff" red="cc" type="rgb"/>

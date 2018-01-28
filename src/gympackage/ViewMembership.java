@@ -41,7 +41,7 @@ ResultSet rs=null;
         ));
         jScrollPane1.setViewportView(memtable);
 
-        back.setText(">>Back");
+        back.setText("<<Back");
         back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backActionPerformed(evt);
@@ -85,7 +85,7 @@ ResultSet rs=null;
     public void DisplayMembershipTable(){
     try{
         conn=MysqlConnect.ConnectDB();
-        String Sql="Select PackageLevel,Fees,Facility from membership";
+        String Sql="Select PackageLevel as 'Package Level',Fees as 'Fees (INR)',Facility from membership";
         pst=conn.prepareStatement(Sql);
         rs=pst.executeQuery();
         memtable.setModel(DbUtils.resultSetToTableModel(rs));

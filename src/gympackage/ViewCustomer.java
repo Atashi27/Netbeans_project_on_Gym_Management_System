@@ -88,7 +88,7 @@ ResultSet rs=null;
     public void DisplayCustTable(){
     try{
         conn=MysqlConnect.ConnectDB();
-        String Sql="Select CName as 'Name',CAge as 'Age',Gender,Height,Weight,Phone,Email,Address from customer";
+        String Sql="Select CName as 'Name',CAge as 'Age (in years)',Gender,Height as 'Height(in cms)',Weight as'Weight(in kgs)',Phone,Email,Address from customer";
         pst=conn.prepareStatement(Sql);
         rs=pst.executeQuery();
         custtable.setModel(DbUtils.resultSetToTableModel(rs));

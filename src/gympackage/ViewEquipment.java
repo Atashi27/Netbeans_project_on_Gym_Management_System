@@ -87,7 +87,7 @@ ResultSet rs=null;
     public void DisplayEquipTable(){
     try{
         conn=MysqlConnect.ConnectDB();
-        String Sql="Select Type as 'Equipment Name',FloorArea as 'Space occupied',Warranty,Price,MaintainenceCost as 'Maintainence Cost',RentalAmount  as 'Rental Amount' from equipment";
+        String Sql="Select EName as 'Equipment Name',Quantity,FloorArea as 'Space occupied',Warranty,Price,MaintainenceCost as 'Maintainence Cost (INR)',RentalAmount  as 'Rental Amount (INR)' from equipment";
         pst=conn.prepareStatement(Sql);
         rs=pst.executeQuery();
         equiptable.setModel(DbUtils.resultSetToTableModel(rs));

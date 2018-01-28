@@ -39,23 +39,24 @@ String thisuser=Login.username;
         viewclass = new javax.swing.JButton();
         addclass = new javax.swing.JButton();
         proftab = new javax.swing.JPanel();
-        gender = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         proftabheightv = new javax.swing.JTextField();
-        height = new javax.swing.JLabel();
+        proftabnamev = new javax.swing.JTextField();
         proftabweightv = new javax.swing.JTextField();
-        weight = new javax.swing.JLabel();
+        proftabagev = new javax.swing.JTextField();
         proftabcontactv = new javax.swing.JTextField();
+        proftabgenderv = new javax.swing.JTextField();
         proftabemailv = new javax.swing.JTextField();
-        contact = new javax.swing.JLabel();
         proftabaddressv = new javax.swing.JTextField();
         email = new javax.swing.JLabel();
-        showprofile = new javax.swing.JButton();
+        gender = new javax.swing.JLabel();
         address = new javax.swing.JLabel();
-        proftabnamev = new javax.swing.JTextField();
+        height = new javax.swing.JLabel();
         name = new javax.swing.JLabel();
-        proftabagev = new javax.swing.JTextField();
+        weight = new javax.swing.JLabel();
         age = new javax.swing.JLabel();
-        proftabgenderv = new javax.swing.JTextField();
+        contact = new javax.swing.JLabel();
+        showprofile = new javax.swing.JButton();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         logout = new javax.swing.JButton();
@@ -127,7 +128,7 @@ String thisuser=Login.username;
                 .addComponent(viewcustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(addcustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addContainerGap(255, Short.MAX_VALUE))
         );
 
         tabs.addTab("Customers", custtab);
@@ -152,21 +153,21 @@ String thisuser=Login.username;
         equiptab.setLayout(equiptabLayout);
         equiptabLayout.setHorizontalGroup(
             equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, equiptabLayout.createSequentialGroup()
-                .addContainerGap(484, Short.MAX_VALUE)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(addequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(viewequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(458, 458, 458))
+            .addGroup(equiptabLayout.createSequentialGroup()
+                .addGap(446, 446, 446)
+                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(viewequipment, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
+                    .addComponent(addequipment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(446, Short.MAX_VALUE))
         );
         equiptabLayout.setVerticalGroup(
             equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(equiptabLayout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(viewequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(addequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(317, Short.MAX_VALUE))
+                .addGap(180, 180, 180)
+                .addComponent(viewequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(addequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(259, Short.MAX_VALUE))
         );
 
         tabs.addTab("Equipments", equiptab);
@@ -192,20 +193,20 @@ String thisuser=Login.username;
         memtabLayout.setHorizontalGroup(
             memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(431, 431, 431)
+                .addGap(433, 433, 433)
                 .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(viewmembership, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(upgrademembership, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE))
-                .addContainerGap(485, Short.MAX_VALUE))
+                    .addComponent(upgrademembership, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(448, Short.MAX_VALUE))
         );
         memtabLayout.setVerticalGroup(
             memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(141, 141, 141)
-                .addComponent(viewmembership, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(upgrademembership, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(317, Short.MAX_VALUE))
+                .addGap(184, 184, 184)
+                .addComponent(viewmembership, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(upgrademembership, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(264, Short.MAX_VALUE))
         );
 
         tabs.addTab("Membership", memtab);
@@ -230,21 +231,21 @@ String thisuser=Login.username;
         paytab.setLayout(paytabLayout);
         paytabLayout.setHorizontalGroup(
             paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paytabLayout.createSequentialGroup()
-                .addContainerGap(491, Short.MAX_VALUE)
+            .addGroup(paytabLayout.createSequentialGroup()
+                .addGap(432, 432, 432)
                 .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(viewpayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(acceptpayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(471, 471, 471))
+                    .addComponent(acceptpayment, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE))
+                .addContainerGap(467, Short.MAX_VALUE))
         );
         paytabLayout.setVerticalGroup(
             paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(121, 121, 121)
-                .addComponent(viewpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(acceptpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(338, Short.MAX_VALUE))
+                .addGap(185, 185, 185)
+                .addComponent(viewpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(acceptpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(260, Short.MAX_VALUE))
         );
 
         tabs.addTab("Payment", paytab);
@@ -270,20 +271,20 @@ String thisuser=Login.username;
         stafftabLayout.setHorizontalGroup(
             stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(stafftabLayout.createSequentialGroup()
-                .addGap(460, 460, 460)
+                .addGap(455, 455, 455)
                 .addGroup(stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewstaff, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
-                    .addComponent(addstaff, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(505, Short.MAX_VALUE))
+                    .addComponent(viewstaff, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(addstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(462, Short.MAX_VALUE))
         );
         stafftabLayout.setVerticalGroup(
             stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(stafftabLayout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(viewstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(193, 193, 193)
+                .addComponent(viewstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(addstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(321, Short.MAX_VALUE))
+                .addComponent(addstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(251, Short.MAX_VALUE))
         );
 
         tabs.addTab("Staff", stafftab);
@@ -308,54 +309,74 @@ String thisuser=Login.username;
         classtab.setLayout(classtabLayout);
         classtabLayout.setHorizontalGroup(
             classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(classtabLayout.createSequentialGroup()
-                .addGap(468, 468, 468)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, classtabLayout.createSequentialGroup()
+                .addContainerGap(466, Short.MAX_VALUE)
                 .addGroup(classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewclass, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
-                    .addComponent(addclass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(505, Short.MAX_VALUE))
+                    .addComponent(viewclass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(addclass, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(453, 453, 453))
         );
         classtabLayout.setVerticalGroup(
             classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(classtabLayout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addComponent(viewclass, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(addclass, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addGap(195, 195, 195)
+                .addComponent(viewclass, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(addclass, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(256, Short.MAX_VALUE))
         );
 
         tabs.addTab("Class", classtab);
 
+        jPanel1.setBackground(new java.awt.Color(222, 231, 231));
+
+        proftabheightv.setEditable(false);
+        proftabheightv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabnamev.setEditable(false);
+        proftabnamev.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabweightv.setEditable(false);
+        proftabweightv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabagev.setEditable(false);
+        proftabagev.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabcontactv.setEditable(false);
+        proftabcontactv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabgenderv.setEditable(false);
+        proftabgenderv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabemailv.setEditable(false);
+        proftabemailv.setBackground(new java.awt.Color(172, 241, 227));
+
+        proftabaddressv.setEditable(false);
+        proftabaddressv.setBackground(new java.awt.Color(172, 241, 227));
+
+        email.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        email.setText("Email");
+
         gender.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         gender.setText("Gender");
 
-        proftabheightv.setEditable(false);
-        proftabheightv.setBackground(new java.awt.Color(255, 255, 153));
+        address.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        address.setText("Address");
 
         height.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         height.setText("Height");
 
-        proftabweightv.setEditable(false);
-        proftabweightv.setBackground(new java.awt.Color(255, 255, 153));
+        name.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        name.setText("Name");
 
         weight.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         weight.setText("Weight");
 
-        proftabcontactv.setEditable(false);
-        proftabcontactv.setBackground(new java.awt.Color(255, 255, 153));
-
-        proftabemailv.setEditable(false);
-        proftabemailv.setBackground(new java.awt.Color(255, 255, 153));
+        age.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        age.setText("Age");
 
         contact.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
         contact.setText("Contact");
-
-        proftabaddressv.setEditable(false);
-        proftabaddressv.setBackground(new java.awt.Color(255, 255, 153));
-
-        email.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        email.setText("Email");
 
         showprofile.setText("Show");
         showprofile.addActionListener(new java.awt.event.ActionListener() {
@@ -364,111 +385,107 @@ String thisuser=Login.username;
             }
         });
 
-        address.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        address.setText("Address");
-
-        proftabnamev.setEditable(false);
-        proftabnamev.setBackground(new java.awt.Color(255, 255, 153));
-
-        name.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        name.setText("Name");
-
-        proftabagev.setEditable(false);
-        proftabagev.setBackground(new java.awt.Color(255, 255, 153));
-
-        age.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
-        age.setText("Age");
-
-        proftabgenderv.setEditable(false);
-        proftabgenderv.setBackground(new java.awt.Color(255, 255, 153));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(address)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(age)
+                            .addComponent(name)
+                            .addComponent(gender)
+                            .addComponent(height, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+                        .addGap(148, 148, 148))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(contact)
+                            .addComponent(weight, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(email))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(1, 1, 1)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(proftabaddressv)
+                            .addComponent(proftabemailv)
+                            .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(proftabnamev)
+                            .addComponent(proftabgenderv)
+                            .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(88, 88, 88))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(254, 254, 254)
+                .addComponent(showprofile)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(38, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(name))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(age))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gender))
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(height))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(weight))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(contact))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(email))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(address))
+                .addGap(10, 10, 10)
+                .addComponent(showprofile)
+                .addGap(24, 24, 24))
+        );
 
         javax.swing.GroupLayout proftabLayout = new javax.swing.GroupLayout(proftab);
         proftab.setLayout(proftabLayout);
         proftabLayout.setHorizontalGroup(
             proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(proftabLayout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(proftabLayout.createSequentialGroup()
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(proftabLayout.createSequentialGroup()
-                                    .addComponent(weight, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGap(148, 148, 148))
-                                .addGroup(proftabLayout.createSequentialGroup()
-                                    .addComponent(height, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGap(149, 149, 149)))
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(proftabLayout.createSequentialGroup()
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(address)
-                                .addComponent(email)
-                                .addComponent(contact))
-                            .addGap(143, 143, 143)
-                            .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(proftabaddressv)
-                                .addComponent(proftabemailv)
-                                .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(proftabLayout.createSequentialGroup()
-                        .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(gender)
-                                    .addComponent(age))
-                                .addGap(148, 148, 148))
-                            .addGroup(proftabLayout.createSequentialGroup()
-                                .addComponent(name)
-                                .addGap(166, 166, 166)))
-                        .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(proftabnamev)
-                            .addComponent(proftabgenderv)
-                            .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(528, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(showprofile)
-                .addGap(115, 115, 115))
+                .addContainerGap(243, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(234, 234, 234))
         );
         proftabLayout.setVerticalGroup(
             proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(65, Short.MAX_VALUE)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name)
-                    .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(age)
-                    .addComponent(proftabagev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(gender)
-                    .addComponent(proftabgenderv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(height)
-                    .addComponent(proftabheightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(weight)
-                    .addComponent(proftabweightv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(contact)
-                    .addComponent(proftabcontactv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(proftabemailv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(email))
-                .addGap(34, 34, 34)
-                .addGroup(proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(address)
-                    .addComponent(proftabaddressv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addComponent(showprofile)
-                .addGap(44, 44, 44))
+            .addGroup(proftabLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         tabs.addTab("My Profile", proftab);
@@ -535,7 +552,7 @@ String thisuser=Login.username;
                 .addContainerGap()
                 .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tabs))
+                .addComponent(tabs, javax.swing.GroupLayout.DEFAULT_SIZE, 637, Short.MAX_VALUE))
         );
 
         pack();
@@ -552,6 +569,8 @@ String thisuser=Login.username;
     }//GEN-LAST:event_addequipmentActionPerformed
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
+        Login w=new Login();
+        w.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logoutActionPerformed
 
@@ -656,6 +675,7 @@ String thisuser=Login.username;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton logout;
     private javax.swing.JPanel memtab;
     private javax.swing.JLabel name;

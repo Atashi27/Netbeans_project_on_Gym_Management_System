@@ -656,6 +656,8 @@ public class UserPanel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
+        Login w=new Login();
+        w.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logoutActionPerformed
 

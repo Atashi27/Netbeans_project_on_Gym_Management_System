@@ -15,7 +15,6 @@ public static String username,password;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         bg = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         form = new javax.swing.JPanel();
@@ -35,7 +34,7 @@ public static String username,password;
         im7 = new javax.swing.JLabel();
         im8 = new javax.swing.JLabel();
         im10 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
+        sep = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -138,7 +137,7 @@ public static String username,password;
                 .addGap(54, 54, 54))
             .addGroup(bgLayout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 1059, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sep, javax.swing.GroupLayout.PREFERRED_SIZE, 1059, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(33, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -175,7 +174,7 @@ public static String username,password;
                         .addContainerGap()
                         .addComponent(form, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sep, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(im2)
@@ -234,10 +233,12 @@ public static String username,password;
                 if("1".equals(rs.getString(3))){
                     UserPanel w=new UserPanel();
                     w.setVisible(true);
+                    this.dispose();
                 }
                 else{
                     MgrPanel w=new MgrPanel();
                     w.setVisible(true);
+                    this.dispose();
                 } 
             }
             else{
@@ -277,7 +278,6 @@ public static String username,password;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel form;
     private javax.swing.JLabel gymnametitle;
     private javax.swing.JLabel im10;
@@ -289,11 +289,11 @@ public static String username,password;
     private javax.swing.JLabel im7;
     private javax.swing.JLabel im8;
     private javax.swing.JLabel im9;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel moto;
     private javax.swing.JLabel pwd;
     private javax.swing.JPasswordField pwdv;
     private javax.swing.JButton reset;
+    private javax.swing.JSeparator sep;
     private javax.swing.JButton submit;
     private javax.swing.JLabel uname;
     private javax.swing.JTextField unamev;

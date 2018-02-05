@@ -37,12 +37,15 @@ String thisuser=Login.username;
         paytab = new javax.swing.JPanel();
         viewpayment = new javax.swing.JButton();
         acceptpayment = new javax.swing.JButton();
+        paybackground = new javax.swing.JLabel();
         stafftab = new javax.swing.JPanel();
         viewstaff = new javax.swing.JButton();
         addstaff = new javax.swing.JButton();
+        staffbackground = new javax.swing.JLabel();
         classtab = new javax.swing.JPanel();
         viewclass = new javax.swing.JButton();
         addclass = new javax.swing.JButton();
+        classbackground = new javax.swing.JLabel();
         proftab = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         proftabtimings = new javax.swing.JTextField();
@@ -60,6 +63,7 @@ String thisuser=Login.username;
         age = new javax.swing.JLabel();
         designation = new javax.swing.JLabel();
         showprofile = new javax.swing.JButton();
+        profbackground = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         logout = new javax.swing.JButton();
@@ -74,15 +78,15 @@ String thisuser=Login.username;
 
         jPanel2.setLayout(null);
 
-        homecontent.setFont(new java.awt.Font("Book Antiqua", 3, 24)); // NOI18N
+        homecontent.setFont(new java.awt.Font("Bookman Old Style", 3, 26)); // NOI18N
         homecontent.setForeground(new java.awt.Color(255, 255, 255));
         homecontent.setText("WELCOME TO POWER GYM PORTAL");
         jPanel2.add(homecontent);
-        homecontent.setBounds(330, 50, 450, 80);
+        homecontent.setBounds(310, 50, 490, 80);
 
         homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
         jPanel2.add(homebackground);
-        homebackground.setBounds(0, 20, 1090, 500);
+        homebackground.setBounds(0, 30, 1090, 500);
 
         javax.swing.GroupLayout hometabLayout = new javax.swing.GroupLayout(hometab);
         hometab.setLayout(hometabLayout);
@@ -113,7 +117,7 @@ String thisuser=Login.username;
             }
         });
         custtab.add(addcustomer);
-        addcustomer.setBounds(590, 440, 221, 63);
+        addcustomer.setBounds(610, 460, 221, 63);
 
         viewcustomer.setBackground(new java.awt.Color(204, 204, 255));
         viewcustomer.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -126,11 +130,11 @@ String thisuser=Login.username;
             }
         });
         custtab.add(viewcustomer);
-        viewcustomer.setBounds(320, 440, 221, 63);
+        viewcustomer.setBounds(290, 460, 221, 63);
 
-        custbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg5.jpg")); // NOI18N
+        custbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg6.jpg")); // NOI18N
         custtab.add(custbackground);
-        custbackground.setBounds(110, 40, 880, 500);
+        custbackground.setBounds(10, 20, 1100, 530);
 
         tabs.addTab("Customers", custtab);
 
@@ -144,7 +148,7 @@ String thisuser=Login.username;
             }
         });
         equiptab.add(addequipment);
-        addequipment.setBounds(640, 120, 229, 50);
+        addequipment.setBounds(590, 120, 229, 50);
 
         viewequipment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         viewequipment.setText("View Equipments");
@@ -158,7 +162,7 @@ String thisuser=Login.username;
 
         equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg2.jpg")); // NOI18N
         equiptab.add(equipbackground);
-        equipbackground.setBounds(80, 10, 960, 580);
+        equipbackground.setBounds(10, 30, 1100, 520);
 
         tabs.addTab("Equipments", equiptab);
 
@@ -172,7 +176,7 @@ String thisuser=Login.username;
             }
         });
         memtab.add(viewmembership);
-        viewmembership.setBounds(290, 380, 240, 63);
+        viewmembership.setBounds(280, 430, 240, 63);
 
         upgrademembership.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         upgrademembership.setText("Upgrade Membership");
@@ -182,13 +186,15 @@ String thisuser=Login.username;
             }
         });
         memtab.add(upgrademembership);
-        upgrademembership.setBounds(590, 380, 240, 63);
+        upgrademembership.setBounds(610, 430, 240, 63);
 
-        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg8.jpg")); // NOI18N
+        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg7.jpg")); // NOI18N
         memtab.add(membackground);
-        membackground.setBounds(10, 20, 1100, 560);
+        membackground.setBounds(10, 20, 1100, 550);
 
         tabs.addTab("Membership", memtab);
+
+        paytab.setLayout(null);
 
         viewpayment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         viewpayment.setText("View Payment");
@@ -197,6 +203,8 @@ String thisuser=Login.username;
                 viewpaymentActionPerformed(evt);
             }
         });
+        paytab.add(viewpayment);
+        viewpayment.setBounds(310, 360, 222, 63);
 
         acceptpayment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         acceptpayment.setText("Accept Payment");
@@ -205,29 +213,16 @@ String thisuser=Login.username;
                 acceptpaymentActionPerformed(evt);
             }
         });
+        paytab.add(acceptpayment);
+        acceptpayment.setBounds(620, 360, 222, 66);
 
-        javax.swing.GroupLayout paytabLayout = new javax.swing.GroupLayout(paytab);
-        paytab.setLayout(paytabLayout);
-        paytabLayout.setHorizontalGroup(
-            paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(432, 432, 432)
-                .addGroup(paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewpayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(acceptpayment, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE))
-                .addContainerGap(467, Short.MAX_VALUE))
-        );
-        paytabLayout.setVerticalGroup(
-            paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(185, 185, 185)
-                .addComponent(viewpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(acceptpayment, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(260, Short.MAX_VALUE))
-        );
+        paybackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg11.jpg")); // NOI18N
+        paytab.add(paybackground);
+        paybackground.setBounds(11, 20, 1080, 550);
 
         tabs.addTab("Payment", paytab);
+
+        stafftab.setLayout(null);
 
         viewstaff.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         viewstaff.setText("View Staff");
@@ -236,6 +231,8 @@ String thisuser=Login.username;
                 viewstaffActionPerformed(evt);
             }
         });
+        stafftab.add(viewstaff);
+        viewstaff.setBounds(320, 450, 204, 65);
 
         addstaff.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         addstaff.setText("Add Staff");
@@ -244,29 +241,16 @@ String thisuser=Login.username;
                 addstaffActionPerformed(evt);
             }
         });
+        stafftab.add(addstaff);
+        addstaff.setBounds(580, 450, 204, 65);
 
-        javax.swing.GroupLayout stafftabLayout = new javax.swing.GroupLayout(stafftab);
-        stafftab.setLayout(stafftabLayout);
-        stafftabLayout.setHorizontalGroup(
-            stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(stafftabLayout.createSequentialGroup()
-                .addGap(455, 455, 455)
-                .addGroup(stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewstaff, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(462, Short.MAX_VALUE))
-        );
-        stafftabLayout.setVerticalGroup(
-            stafftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(stafftabLayout.createSequentialGroup()
-                .addGap(193, 193, 193)
-                .addComponent(viewstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(addstaff, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(251, Short.MAX_VALUE))
-        );
+        staffbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg12.jpg")); // NOI18N
+        stafftab.add(staffbackground);
+        staffbackground.setBounds(11, 10, 1100, 570);
 
         tabs.addTab("Staff", stafftab);
+
+        classtab.setLayout(null);
 
         viewclass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         viewclass.setText("View Class");
@@ -275,6 +259,8 @@ String thisuser=Login.username;
                 viewclassActionPerformed(evt);
             }
         });
+        classtab.add(viewclass);
+        viewclass.setBounds(290, 380, 202, 65);
 
         addclass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         addclass.setText("Add Class");
@@ -283,29 +269,16 @@ String thisuser=Login.username;
                 addclassActionPerformed(evt);
             }
         });
+        classtab.add(addclass);
+        addclass.setBounds(620, 380, 202, 58);
 
-        javax.swing.GroupLayout classtabLayout = new javax.swing.GroupLayout(classtab);
-        classtab.setLayout(classtabLayout);
-        classtabLayout.setHorizontalGroup(
-            classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, classtabLayout.createSequentialGroup()
-                .addContainerGap(466, Short.MAX_VALUE)
-                .addGroup(classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewclass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addclass, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(453, 453, 453))
-        );
-        classtabLayout.setVerticalGroup(
-            classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(classtabLayout.createSequentialGroup()
-                .addGap(195, 195, 195)
-                .addComponent(viewclass, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(addclass, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(256, Short.MAX_VALUE))
-        );
+        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg16.jpg")); // NOI18N
+        classtab.add(classbackground);
+        classbackground.setBounds(10, 20, 1100, 550);
 
         tabs.addTab("Class", classtab);
+
+        proftab.setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -433,22 +406,12 @@ String thisuser=Login.username;
                 .addGap(34, 34, 34))
         );
 
-        javax.swing.GroupLayout proftabLayout = new javax.swing.GroupLayout(proftab);
-        proftab.setLayout(proftabLayout);
-        proftabLayout.setHorizontalGroup(
-            proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(243, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(234, 234, 234))
-        );
-        proftabLayout.setVerticalGroup(
-            proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(proftabLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
+        proftab.add(jPanel1);
+        jPanel1.setBounds(30, 50, 644, 495);
+
+        profbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg19.jpg")); // NOI18N
+        proftab.add(profbackground);
+        profbackground.setBounds(710, 120, 360, 310);
 
         tabs.addTab("My Profile", proftab);
 
@@ -623,6 +586,7 @@ String thisuser=Login.username;
     private javax.swing.JButton addstaff;
     private javax.swing.JLabel age;
     private javax.swing.JLabel areaofexpertise;
+    private javax.swing.JLabel classbackground;
     private javax.swing.JPanel classtab;
     private javax.swing.JLabel custbackground;
     private javax.swing.JPanel custtab;
@@ -642,7 +606,9 @@ String thisuser=Login.username;
     private javax.swing.JLabel membackground;
     private javax.swing.JPanel memtab;
     private javax.swing.JLabel name;
+    private javax.swing.JLabel paybackground;
     private javax.swing.JPanel paytab;
+    private javax.swing.JLabel profbackground;
     private javax.swing.JPanel proftab;
     private javax.swing.JTextField proftabagev;
     private javax.swing.JTextField proftabareaofexpertise;
@@ -653,6 +619,7 @@ String thisuser=Login.username;
     private javax.swing.JTextField proftabtimings;
     private javax.swing.JLabel salary;
     private javax.swing.JButton showprofile;
+    private javax.swing.JLabel staffbackground;
     private javax.swing.JPanel stafftab;
     private javax.swing.JTabbedPane tabs;
     private javax.swing.JLabel timings;

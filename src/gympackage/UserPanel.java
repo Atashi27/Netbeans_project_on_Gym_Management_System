@@ -31,6 +31,7 @@ public class UserPanel extends javax.swing.JFrame {
         facility = new javax.swing.JLabel();
         dateofmem = new javax.swing.JLabel();
         showmembership = new javax.swing.JButton();
+        membackground = new javax.swing.JLabel();
         paytab = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         paytabstatusv = new javax.swing.JTextField();
@@ -42,6 +43,7 @@ public class UserPanel extends javax.swing.JFrame {
         lastdateofpayment = new javax.swing.JLabel();
         modeofpayment = new javax.swing.JLabel();
         showpayment = new javax.swing.JButton();
+        paybackground = new javax.swing.JLabel();
         equiptab = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         equiptabnamev = new javax.swing.JTextField();
@@ -53,6 +55,7 @@ public class UserPanel extends javax.swing.JFrame {
         validity = new javax.swing.JLabel();
         rentaldate = new javax.swing.JLabel();
         showequipment = new javax.swing.JButton();
+        equipbackground = new javax.swing.JLabel();
         proftab = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         proftabaddressv = new javax.swing.JTextField();
@@ -72,6 +75,7 @@ public class UserPanel extends javax.swing.JFrame {
         gender = new javax.swing.JLabel();
         height = new javax.swing.JLabel();
         showprofile = new javax.swing.JButton();
+        profbackground = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         logout = new javax.swing.JButton();
@@ -85,17 +89,19 @@ public class UserPanel extends javax.swing.JFrame {
         hometab.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         hometab.setLayout(null);
 
-        homecontent.setFont(new java.awt.Font("Book Antiqua", 3, 24)); // NOI18N
+        homecontent.setFont(new java.awt.Font("Bookman Old Style", 3, 26)); // NOI18N
         homecontent.setForeground(new java.awt.Color(255, 255, 255));
         homecontent.setText("WELCOME TO POWER GYM PORTAL");
         hometab.add(homecontent);
-        homecontent.setBounds(340, 70, 450, 80);
+        homecontent.setBounds(320, 50, 490, 80);
 
         homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
         hometab.add(homebackground);
         homebackground.setBounds(10, 40, 1090, 500);
 
         tabs.addTab("Home", hometab);
+
+        memtab.setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -199,24 +205,16 @@ public class UserPanel extends javax.swing.JFrame {
                 .addGap(44, 44, 44))
         );
 
-        javax.swing.GroupLayout memtabLayout = new javax.swing.GroupLayout(memtab);
-        memtab.setLayout(memtabLayout);
-        memtabLayout.setHorizontalGroup(
-            memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(235, 235, 235)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(273, Short.MAX_VALUE))
-        );
-        memtabLayout.setVerticalGroup(
-            memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, memtabLayout.createSequentialGroup()
-                .addContainerGap(73, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(116, 116, 116))
-        );
+        memtab.add(jPanel1);
+        jPanel1.setBounds(22, 75, 603, 390);
+
+        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg8.jpg")); // NOI18N
+        memtab.add(membackground);
+        membackground.setBounds(670, 100, 400, 320);
 
         tabs.addTab("My Membership", memtab);
+
+        paytab.setLayout(null);
 
         jPanel4.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -300,24 +298,16 @@ public class UserPanel extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        javax.swing.GroupLayout paytabLayout = new javax.swing.GroupLayout(paytab);
-        paytab.setLayout(paytabLayout);
-        paytabLayout.setHorizontalGroup(
-            paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(251, 251, 251)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(268, Short.MAX_VALUE))
-        );
-        paytabLayout.setVerticalGroup(
-            paytabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(paytabLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(135, Short.MAX_VALUE))
-        );
+        paytab.add(jPanel4);
+        jPanel4.setBounds(28, 100, 592, 334);
+
+        paybackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg9.png")); // NOI18N
+        paytab.add(paybackground);
+        paybackground.setBounds(660, 120, 400, 280);
 
         tabs.addTab("My Payment", paytab);
+
+        equiptab.setLayout(null);
 
         jPanel3.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -404,24 +394,16 @@ public class UserPanel extends javax.swing.JFrame {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout equiptabLayout = new javax.swing.GroupLayout(equiptab);
-        equiptab.setLayout(equiptabLayout);
-        equiptabLayout.setHorizontalGroup(
-            equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, equiptabLayout.createSequentialGroup()
-                .addContainerGap(248, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(255, 255, 255))
-        );
-        equiptabLayout.setVerticalGroup(
-            equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(equiptabLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(112, Short.MAX_VALUE))
-        );
+        equiptab.add(jPanel3);
+        jPanel3.setBounds(31, 85, 608, 383);
+
+        equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg14.jpg")); // NOI18N
+        equiptab.add(equipbackground);
+        equipbackground.setBounds(690, 130, 380, 300);
 
         tabs.addTab("My Equipment", equiptab);
+
+        proftab.setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -558,22 +540,12 @@ public class UserPanel extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout proftabLayout = new javax.swing.GroupLayout(proftab);
-        proftab.setLayout(proftabLayout);
-        proftabLayout.setHorizontalGroup(
-            proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(230, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(200, 200, 200))
-        );
-        proftabLayout.setVerticalGroup(
-            proftabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, proftabLayout.createSequentialGroup()
-                .addContainerGap(52, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43))
-        );
+        proftab.add(jPanel2);
+        jPanel2.setBounds(22, 40, 640, 484);
+
+        profbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg4.png")); // NOI18N
+        proftab.add(profbackground);
+        profbackground.setBounds(690, 80, 400, 390);
 
         tabs.addTab("My Profile", proftab);
 
@@ -791,6 +763,7 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel contact;
     private javax.swing.JLabel dateofmem;
     private javax.swing.JLabel email;
+    private javax.swing.JLabel equipbackground;
     private javax.swing.JLabel equipname;
     private javax.swing.JLabel equipname1;
     private javax.swing.JPanel equiptab;
@@ -813,6 +786,7 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lastdateofpayment;
     private javax.swing.JButton logout;
+    private javax.swing.JLabel membackground;
     private javax.swing.JLabel memdeadline;
     private javax.swing.JPanel memtab;
     private javax.swing.JTextField memtabdatev;
@@ -824,11 +798,13 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel moto;
     private javax.swing.JLabel name;
     private javax.swing.JLabel packagelevel;
+    private javax.swing.JLabel paybackground;
     private javax.swing.JPanel paytab;
     private javax.swing.JTextField paytabamountv;
     private javax.swing.JTextField paytablastdatev;
     private javax.swing.JTextField paytabmodev;
     private javax.swing.JTextField paytabstatusv;
+    private javax.swing.JLabel profbackground;
     private javax.swing.JPanel proftab;
     private javax.swing.JTextField proftabaddressv;
     private javax.swing.JTextField proftabagev;

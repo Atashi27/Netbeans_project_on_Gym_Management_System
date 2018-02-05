@@ -19,16 +19,21 @@ String thisuser=Login.username;
 
         tabs = new javax.swing.JTabbedPane();
         hometab = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         homecontent = new javax.swing.JLabel();
+        homebackground = new javax.swing.JLabel();
         custtab = new javax.swing.JPanel();
         addcustomer = new javax.swing.JButton();
         viewcustomer = new javax.swing.JButton();
+        custbackground = new javax.swing.JLabel();
         equiptab = new javax.swing.JPanel();
         addequipment = new javax.swing.JButton();
         viewequipment = new javax.swing.JButton();
+        equipbackground = new javax.swing.JLabel();
         memtab = new javax.swing.JPanel();
         viewmembership = new javax.swing.JButton();
         upgrademembership = new javax.swing.JButton();
+        membackground = new javax.swing.JLabel();
         paytab = new javax.swing.JPanel();
         viewpayment = new javax.swing.JButton();
         acceptpayment = new javax.swing.JButton();
@@ -67,27 +72,38 @@ String thisuser=Login.username;
 
         hometab.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
 
-        homecontent.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
-        homecontent.setText("Welcome to POWER GYM Portal");
+        jPanel2.setLayout(null);
+
+        homecontent.setFont(new java.awt.Font("Book Antiqua", 3, 24)); // NOI18N
+        homecontent.setForeground(new java.awt.Color(255, 255, 255));
+        homecontent.setText("WELCOME TO POWER GYM PORTAL");
+        jPanel2.add(homecontent);
+        homecontent.setBounds(330, 50, 450, 80);
+
+        homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
+        jPanel2.add(homebackground);
+        homebackground.setBounds(0, 20, 1090, 500);
 
         javax.swing.GroupLayout hometabLayout = new javax.swing.GroupLayout(hometab);
         hometab.setLayout(hometabLayout);
         hometabLayout.setHorizontalGroup(
             hometabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hometabLayout.createSequentialGroup()
-                .addContainerGap(462, Short.MAX_VALUE)
-                .addComponent(homecontent)
-                .addGap(416, 416, 416))
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1097, Short.MAX_VALUE)
+                .addContainerGap())
         );
         hometabLayout.setVerticalGroup(
             hometabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hometabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(homecontent, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(539, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         tabs.addTab("Home", hometab);
+
+        custtab.setLayout(null);
 
         addcustomer.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         addcustomer.setText("Add  Customer");
@@ -96,6 +112,8 @@ String thisuser=Login.username;
                 addcustomerActionPerformed(evt);
             }
         });
+        custtab.add(addcustomer);
+        addcustomer.setBounds(590, 440, 221, 63);
 
         viewcustomer.setBackground(new java.awt.Color(204, 204, 255));
         viewcustomer.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -107,29 +125,16 @@ String thisuser=Login.username;
                 viewcustomerActionPerformed(evt);
             }
         });
+        custtab.add(viewcustomer);
+        viewcustomer.setBounds(320, 440, 221, 63);
 
-        javax.swing.GroupLayout custtabLayout = new javax.swing.GroupLayout(custtab);
-        custtab.setLayout(custtabLayout);
-        custtabLayout.setHorizontalGroup(
-            custtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(custtabLayout.createSequentialGroup()
-                .addGap(443, 443, 443)
-                .addGroup(custtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewcustomer, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                    .addComponent(addcustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(457, Short.MAX_VALUE))
-        );
-        custtabLayout.setVerticalGroup(
-            custtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(custtabLayout.createSequentialGroup()
-                .addGap(182, 182, 182)
-                .addComponent(viewcustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(addcustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
-        );
+        custbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg5.jpg")); // NOI18N
+        custtab.add(custbackground);
+        custbackground.setBounds(110, 40, 880, 500);
 
         tabs.addTab("Customers", custtab);
+
+        equiptab.setLayout(null);
 
         addequipment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         addequipment.setText("Add Equipment");
@@ -138,37 +143,26 @@ String thisuser=Login.username;
                 addequipmentActionPerformed(evt);
             }
         });
+        equiptab.add(addequipment);
+        addequipment.setBounds(640, 120, 229, 50);
 
         viewequipment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        viewequipment.setText("View Equipment");
+        viewequipment.setText("View Equipments");
         viewequipment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewequipmentActionPerformed(evt);
             }
         });
+        equiptab.add(viewequipment);
+        viewequipment.setBounds(300, 120, 229, 50);
 
-        javax.swing.GroupLayout equiptabLayout = new javax.swing.GroupLayout(equiptab);
-        equiptab.setLayout(equiptabLayout);
-        equiptabLayout.setHorizontalGroup(
-            equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(equiptabLayout.createSequentialGroup()
-                .addGap(446, 446, 446)
-                .addGroup(equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewequipment, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
-                    .addComponent(addequipment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(446, Short.MAX_VALUE))
-        );
-        equiptabLayout.setVerticalGroup(
-            equiptabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(equiptabLayout.createSequentialGroup()
-                .addGap(180, 180, 180)
-                .addComponent(viewequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(addequipment, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(259, Short.MAX_VALUE))
-        );
+        equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg2.jpg")); // NOI18N
+        equiptab.add(equipbackground);
+        equipbackground.setBounds(80, 10, 960, 580);
 
         tabs.addTab("Equipments", equiptab);
+
+        memtab.setLayout(null);
 
         viewmembership.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         viewmembership.setText("View Membership");
@@ -177,6 +171,8 @@ String thisuser=Login.username;
                 viewmembershipActionPerformed(evt);
             }
         });
+        memtab.add(viewmembership);
+        viewmembership.setBounds(290, 380, 240, 63);
 
         upgrademembership.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         upgrademembership.setText("Upgrade Membership");
@@ -185,27 +181,12 @@ String thisuser=Login.username;
                 upgrademembershipActionPerformed(evt);
             }
         });
+        memtab.add(upgrademembership);
+        upgrademembership.setBounds(590, 380, 240, 63);
 
-        javax.swing.GroupLayout memtabLayout = new javax.swing.GroupLayout(memtab);
-        memtab.setLayout(memtabLayout);
-        memtabLayout.setHorizontalGroup(
-            memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(433, 433, 433)
-                .addGroup(memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(viewmembership, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(upgrademembership, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(448, Short.MAX_VALUE))
-        );
-        memtabLayout.setVerticalGroup(
-            memtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(memtabLayout.createSequentialGroup()
-                .addGap(184, 184, 184)
-                .addComponent(viewmembership, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(upgrademembership, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(264, Short.MAX_VALUE))
-        );
+        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg8.jpg")); // NOI18N
+        memtab.add(membackground);
+        membackground.setBounds(10, 20, 1100, 560);
 
         tabs.addTab("Membership", memtab);
 
@@ -399,11 +380,8 @@ String thisuser=Login.username;
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(1, 1, 1)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(proftabtimings, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(proftabexperience, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(proftabtimings, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(proftabexperience, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(proftabareaofexpertise)
                             .addComponent(proftabdesignation, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -512,7 +490,7 @@ String thisuser=Login.username;
                 .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(logout)
                     .addComponent(jLabel2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(gymnametitle, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -524,19 +502,18 @@ String thisuser=Login.username;
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tabs))
-                .addContainerGap())
+                    .addComponent(tabs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tabs, javax.swing.GroupLayout.DEFAULT_SIZE, 637, Short.MAX_VALUE))
+                .addComponent(tabs, javax.swing.GroupLayout.PREFERRED_SIZE, 637, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -647,17 +624,22 @@ String thisuser=Login.username;
     private javax.swing.JLabel age;
     private javax.swing.JLabel areaofexpertise;
     private javax.swing.JPanel classtab;
+    private javax.swing.JLabel custbackground;
     private javax.swing.JPanel custtab;
     private javax.swing.JLabel designation;
+    private javax.swing.JLabel equipbackground;
     private javax.swing.JPanel equiptab;
     private javax.swing.JLabel experience;
     private javax.swing.JLabel gymnametitle;
     private javax.swing.JPanel header;
+    private javax.swing.JLabel homebackground;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JButton logout;
+    private javax.swing.JLabel membackground;
     private javax.swing.JPanel memtab;
     private javax.swing.JLabel name;
     private javax.swing.JPanel paytab;

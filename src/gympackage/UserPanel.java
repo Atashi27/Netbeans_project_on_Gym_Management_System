@@ -17,6 +17,7 @@ public class UserPanel extends javax.swing.JFrame {
         tabs = new javax.swing.JTabbedPane();
         hometab = new javax.swing.JPanel();
         homecontent = new javax.swing.JLabel();
+        homebackground = new javax.swing.JLabel();
         memtab = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         memtabpackagev = new javax.swing.JTextField();
@@ -82,26 +83,17 @@ public class UserPanel extends javax.swing.JFrame {
         tabs.setFont(new java.awt.Font("Segoe Print", 1, 17)); // NOI18N
 
         hometab.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        hometab.setLayout(null);
 
-        homecontent.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
-        homecontent.setText("Welcome to POWER GYM Portal");
+        homecontent.setFont(new java.awt.Font("Book Antiqua", 3, 24)); // NOI18N
+        homecontent.setForeground(new java.awt.Color(255, 255, 255));
+        homecontent.setText("WELCOME TO POWER GYM PORTAL");
+        hometab.add(homecontent);
+        homecontent.setBounds(340, 70, 450, 80);
 
-        javax.swing.GroupLayout hometabLayout = new javax.swing.GroupLayout(hometab);
-        hometab.setLayout(hometabLayout);
-        hometabLayout.setHorizontalGroup(
-            hometabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, hometabLayout.createSequentialGroup()
-                .addContainerGap(452, Short.MAX_VALUE)
-                .addComponent(homecontent)
-                .addGap(416, 416, 416))
-        );
-        hometabLayout.setVerticalGroup(
-            hometabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(hometabLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(homecontent, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(526, Short.MAX_VALUE))
-        );
+        homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
+        hometab.add(homebackground);
+        homebackground.setBounds(10, 40, 1090, 500);
 
         tabs.addTab("Home", hometab);
 
@@ -812,6 +804,7 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel gymnametitle;
     private javax.swing.JPanel header;
     private javax.swing.JLabel height;
+    private javax.swing.JLabel homebackground;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
     private javax.swing.JPanel jPanel1;

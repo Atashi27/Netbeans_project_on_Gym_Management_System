@@ -19,7 +19,7 @@ public class UserPanel extends javax.swing.JFrame {
         homecontent = new javax.swing.JLabel();
         homebackground = new javax.swing.JLabel();
         memtab = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        formmembership = new javax.swing.JPanel();
         memtabpackagev = new javax.swing.JTextField();
         memtabfeesv = new javax.swing.JTextField();
         memtabfacilityv = new javax.swing.JTextField();
@@ -33,7 +33,7 @@ public class UserPanel extends javax.swing.JFrame {
         showmembership = new javax.swing.JButton();
         membackground = new javax.swing.JLabel();
         paytab = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        formpayment = new javax.swing.JPanel();
         paytabstatusv = new javax.swing.JTextField();
         paytabamountv = new javax.swing.JTextField();
         paytablastdatev = new javax.swing.JTextField();
@@ -45,7 +45,7 @@ public class UserPanel extends javax.swing.JFrame {
         showpayment = new javax.swing.JButton();
         paybackground = new javax.swing.JLabel();
         equiptab = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        formequipment = new javax.swing.JPanel();
         equiptabnamev = new javax.swing.JTextField();
         equiptabrentv = new javax.swing.JTextField();
         equiptablevalidityv = new javax.swing.JTextField();
@@ -56,6 +56,27 @@ public class UserPanel extends javax.swing.JFrame {
         rentaldate = new javax.swing.JLabel();
         showequipment = new javax.swing.JButton();
         equipbackground = new javax.swing.JLabel();
+        hireequipment = new javax.swing.JButton();
+        classtab = new javax.swing.JPanel();
+        classbackground = new javax.swing.JLabel();
+        formclass = new javax.swing.JPanel();
+        classtabtitlev = new javax.swing.JTextField();
+        classtabdatev = new javax.swing.JTextField();
+        classtabtimingsv = new javax.swing.JTextField();
+        classtabcostv = new javax.swing.JTextField();
+        title = new javax.swing.JLabel();
+        date = new javax.swing.JLabel();
+        timings = new javax.swing.JLabel();
+        cost = new javax.swing.JLabel();
+        classtabprereqv = new javax.swing.JTextField();
+        classtabroomnov = new javax.swing.JTextField();
+        prerequisite = new javax.swing.JLabel();
+        roomno = new javax.swing.JLabel();
+        showclasses = new javax.swing.JButton();
+        signupdate = new javax.swing.JLabel();
+        classtabsignupdatev = new javax.swing.JTextField();
+        joinclass = new javax.swing.JButton();
+        viewclass = new javax.swing.JButton();
         proftab = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         proftabaddressv = new javax.swing.JTextField();
@@ -76,6 +97,7 @@ public class UserPanel extends javax.swing.JFrame {
         height = new javax.swing.JLabel();
         showprofile = new javax.swing.JButton();
         profbackground = new javax.swing.JLabel();
+        changepassword = new javax.swing.JButton();
         header = new javax.swing.JPanel();
         gymnametitle = new javax.swing.JLabel();
         logout = new javax.swing.JButton();
@@ -103,7 +125,7 @@ public class UserPanel extends javax.swing.JFrame {
 
         memtab.setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(222, 231, 231));
+        formmembership.setBackground(new java.awt.Color(222, 231, 231));
 
         memtabpackagev.setEditable(false);
         memtabpackagev.setBackground(new java.awt.Color(172, 241, 227));
@@ -142,61 +164,61 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout formmembershipLayout = new javax.swing.GroupLayout(formmembership);
+        formmembership.setLayout(formmembershipLayout);
+        formmembershipLayout.setHorizontalGroup(
+            formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formmembershipLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formmembershipLayout.createSequentialGroup()
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formmembershipLayout.createSequentialGroup()
+                                .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(packagelevel)
                                     .addComponent(facility)
                                     .addComponent(fees))
                                 .addGap(166, 166, 166))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formmembershipLayout.createSequentialGroup()
                                 .addComponent(dateofmem, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(86, 86, 86))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(formmembershipLayout.createSequentialGroup()
                                 .addComponent(memdeadline, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(memtabdeadlinev)
                             .addComponent(memtabdatev)
                             .addComponent(memtabfeesv)
                             .addComponent(memtabpackagev)
                             .addComponent(memtabfacilityv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formmembershipLayout.createSequentialGroup()
                         .addComponent(showmembership)
                         .addGap(241, 241, 241)))
                 .addGap(46, 46, 46))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        formmembershipLayout.setVerticalGroup(
+            formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formmembershipLayout.createSequentialGroup()
                 .addContainerGap(51, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(formmembershipLayout.createSequentialGroup()
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(formmembershipLayout.createSequentialGroup()
                                 .addGap(48, 48, 48)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(fees)
                                     .addComponent(memtabfeesv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(packagelevel))
                         .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(facility)
                             .addComponent(memtabfacilityv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(29, 29, 29)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(dateofmem)
                             .addComponent(memtabdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(formmembershipLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(memdeadline)
                             .addComponent(memtabdeadlinev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(memtabpackagev, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -205,8 +227,8 @@ public class UserPanel extends javax.swing.JFrame {
                 .addGap(44, 44, 44))
         );
 
-        memtab.add(jPanel1);
-        jPanel1.setBounds(22, 75, 603, 390);
+        memtab.add(formmembership);
+        formmembership.setBounds(22, 75, 603, 390);
 
         membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg8.jpg")); // NOI18N
         memtab.add(membackground);
@@ -216,7 +238,7 @@ public class UserPanel extends javax.swing.JFrame {
 
         paytab.setLayout(null);
 
-        jPanel4.setBackground(new java.awt.Color(222, 231, 231));
+        formpayment.setBackground(new java.awt.Color(222, 231, 231));
 
         paytabstatusv.setEditable(false);
         paytabstatusv.setBackground(new java.awt.Color(172, 241, 227));
@@ -249,35 +271,35 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout formpaymentLayout = new javax.swing.GroupLayout(formpayment);
+        formpayment.setLayout(formpaymentLayout);
+        formpaymentLayout.setHorizontalGroup(
+            formpaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formpaymentLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(formpaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(status)
                     .addComponent(lastdateofpayment)
                     .addComponent(amount)
                     .addComponent(modeofpayment))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(formpaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(paytabmodev, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(paytabamountv, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(paytabstatusv, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(paytablastdatev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(59, 59, 59))
-            .addGroup(jPanel4Layout.createSequentialGroup()
+            .addGroup(formpaymentLayout.createSequentialGroup()
                 .addGap(263, 263, 263)
                 .addComponent(showpayment)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        formpaymentLayout.setVerticalGroup(
+            formpaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formpaymentLayout.createSequentialGroup()
                 .addGap(52, 52, 52)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(formpaymentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(formpaymentLayout.createSequentialGroup()
                         .addComponent(status)
                         .addGap(31, 31, 31)
                         .addComponent(amount)
@@ -285,7 +307,7 @@ public class UserPanel extends javax.swing.JFrame {
                         .addComponent(lastdateofpayment)
                         .addGap(30, 30, 30)
                         .addComponent(modeofpayment))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(formpaymentLayout.createSequentialGroup()
                         .addComponent(paytabstatusv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
                         .addComponent(paytabamountv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -298,8 +320,8 @@ public class UserPanel extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
-        paytab.add(jPanel4);
-        jPanel4.setBounds(28, 100, 592, 334);
+        paytab.add(formpayment);
+        formpayment.setBounds(28, 100, 592, 334);
 
         paybackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg9.png")); // NOI18N
         paytab.add(paybackground);
@@ -309,7 +331,7 @@ public class UserPanel extends javax.swing.JFrame {
 
         equiptab.setLayout(null);
 
-        jPanel3.setBackground(new java.awt.Color(222, 231, 231));
+        formequipment.setBackground(new java.awt.Color(222, 231, 231));
 
         equiptabnamev.setEditable(false);
         equiptabnamev.setBackground(new java.awt.Color(172, 241, 227));
@@ -342,38 +364,38 @@ public class UserPanel extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout formequipmentLayout = new javax.swing.GroupLayout(formequipment);
+        formequipment.setLayout(formequipmentLayout);
+        formequipmentLayout.setHorizontalGroup(
+            formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formequipmentLayout.createSequentialGroup()
                 .addGap(88, 88, 88)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rentaldate)
                     .addComponent(validity, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(equipname)
                     .addComponent(equipname1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(equiptablevalidityv)
                     .addComponent(equiptabrentdatev)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(formequipmentLayout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(equiptabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(68, 68, 68))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formequipmentLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(showequipment)
                 .addGap(269, 269, 269))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        formequipmentLayout.setVerticalGroup(
+            formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formequipmentLayout.createSequentialGroup()
                 .addGap(80, 80, 80)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(formequipmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formequipmentLayout.createSequentialGroup()
                         .addComponent(equipname)
                         .addGap(31, 31, 31)
                         .addComponent(equipname1)
@@ -381,7 +403,7 @@ public class UserPanel extends javax.swing.JFrame {
                         .addComponent(validity)
                         .addGap(37, 37, 37)
                         .addComponent(rentaldate))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(formequipmentLayout.createSequentialGroup()
                         .addComponent(equiptabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
                         .addComponent(equiptabrentv, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -394,14 +416,214 @@ public class UserPanel extends javax.swing.JFrame {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        equiptab.add(jPanel3);
-        jPanel3.setBounds(31, 85, 608, 383);
+        equiptab.add(formequipment);
+        formequipment.setBounds(31, 85, 608, 383);
 
         equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg14.jpg")); // NOI18N
         equiptab.add(equipbackground);
-        equipbackground.setBounds(690, 130, 380, 300);
+        equipbackground.setBounds(680, 90, 380, 300);
+
+        hireequipment.setBackground(new java.awt.Color(204, 204, 255));
+        hireequipment.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        hireequipment.setText("Hire Equipment");
+        hireequipment.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        hireequipment.setOpaque(false);
+        hireequipment.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hireequipmentActionPerformed(evt);
+            }
+        });
+        equiptab.add(hireequipment);
+        hireequipment.setBounds(750, 420, 221, 63);
 
         tabs.addTab("My Equipment", equiptab);
+
+        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg16.jpg")); // NOI18N
+
+        formclass.setBackground(new java.awt.Color(222, 231, 231));
+
+        classtabtitlev.setEditable(false);
+        classtabtitlev.setBackground(new java.awt.Color(172, 241, 227));
+
+        classtabdatev.setEditable(false);
+        classtabdatev.setBackground(new java.awt.Color(172, 241, 227));
+
+        classtabtimingsv.setEditable(false);
+        classtabtimingsv.setBackground(new java.awt.Color(172, 241, 227));
+
+        classtabcostv.setEditable(false);
+        classtabcostv.setBackground(new java.awt.Color(172, 241, 227));
+
+        title.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        title.setText("Title");
+
+        date.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        date.setText("Date");
+
+        timings.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        timings.setText("Timings");
+
+        cost.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        cost.setText("Cost");
+
+        classtabprereqv.setEditable(false);
+        classtabprereqv.setBackground(new java.awt.Color(172, 241, 227));
+
+        classtabroomnov.setEditable(false);
+        classtabroomnov.setBackground(new java.awt.Color(172, 241, 227));
+
+        prerequisite.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        prerequisite.setText("Pre-requisite");
+
+        roomno.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        roomno.setText("Room No");
+
+        showclasses.setText("Show");
+        showclasses.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showclassesActionPerformed(evt);
+            }
+        });
+
+        signupdate.setFont(new java.awt.Font("Arial", 2, 20)); // NOI18N
+        signupdate.setText("SignUp Date");
+
+        classtabsignupdatev.setEditable(false);
+        classtabsignupdatev.setBackground(new java.awt.Color(172, 241, 227));
+
+        javax.swing.GroupLayout formclassLayout = new javax.swing.GroupLayout(formclass);
+        formclass.setLayout(formclassLayout);
+        formclassLayout.setHorizontalGroup(
+            formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formclassLayout.createSequentialGroup()
+                .addGap(76, 76, 76)
+                .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formclassLayout.createSequentialGroup()
+                        .addComponent(roomno)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(classtabroomnov, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(formclassLayout.createSequentialGroup()
+                        .addComponent(prerequisite)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                        .addComponent(classtabprereqv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formclassLayout.createSequentialGroup()
+                        .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(title)
+                            .addComponent(timings)
+                            .addComponent(date)
+                            .addComponent(cost))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(classtabcostv, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(classtabdatev, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(classtabtitlev, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(classtabtimingsv, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(formclassLayout.createSequentialGroup()
+                        .addComponent(signupdate)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(classtabsignupdatev, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(60, 60, 60))
+            .addGroup(formclassLayout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addComponent(showclasses)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        formclassLayout.setVerticalGroup(
+            formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formclassLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(formclassLayout.createSequentialGroup()
+                        .addComponent(title)
+                        .addGap(18, 18, 18)
+                        .addComponent(date)
+                        .addGap(18, 18, 18)
+                        .addComponent(timings)
+                        .addGap(18, 18, 18)
+                        .addComponent(cost))
+                    .addGroup(formclassLayout.createSequentialGroup()
+                        .addComponent(classtabtitlev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(classtabdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(classtabtimingsv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(classtabcostv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(prerequisite, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classtabprereqv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roomno)
+                    .addComponent(classtabroomnov, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(formclassLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(signupdate)
+                    .addComponent(classtabsignupdatev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(showclasses)
+                .addContainerGap(45, Short.MAX_VALUE))
+        );
+
+        joinclass.setBackground(new java.awt.Color(204, 204, 255));
+        joinclass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        joinclass.setText("Join new class");
+        joinclass.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        joinclass.setOpaque(false);
+        joinclass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                joinclassActionPerformed(evt);
+            }
+        });
+
+        viewclass.setBackground(new java.awt.Color(204, 204, 255));
+        viewclass.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        viewclass.setText("View Class");
+        viewclass.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        viewclass.setOpaque(false);
+        viewclass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewclassActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout classtabLayout = new javax.swing.GroupLayout(classtab);
+        classtab.setLayout(classtabLayout);
+        classtabLayout.setHorizontalGroup(
+            classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, classtabLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(formclass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(classtabLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                        .addComponent(classbackground, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37))
+                    .addGroup(classtabLayout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addGroup(classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(viewclass, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(joinclass, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        classtabLayout.setVerticalGroup(
+            classtabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(classtabLayout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(classbackground, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(joinclass, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(viewclass, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, classtabLayout.createSequentialGroup()
+                .addContainerGap(99, Short.MAX_VALUE)
+                .addComponent(formclass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79))
+        );
+
+        tabs.addTab("My Classes", classtab);
 
         proftab.setLayout(null);
 
@@ -502,7 +724,7 @@ public class UserPanel extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 29, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(proftabnamev, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -541,11 +763,24 @@ public class UserPanel extends javax.swing.JFrame {
         );
 
         proftab.add(jPanel2);
-        jPanel2.setBounds(22, 40, 640, 484);
+        jPanel2.setBounds(22, 40, 640, 480);
 
         profbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg4.png")); // NOI18N
         proftab.add(profbackground);
-        profbackground.setBounds(690, 80, 400, 390);
+        profbackground.setBounds(690, 30, 400, 390);
+
+        changepassword.setBackground(new java.awt.Color(204, 204, 255));
+        changepassword.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        changepassword.setText("Change password");
+        changepassword.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        changepassword.setOpaque(false);
+        changepassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changepasswordActionPerformed(evt);
+            }
+        });
+        proftab.add(changepassword);
+        changepassword.setBounds(780, 450, 221, 63);
 
         tabs.addTab("My Profile", proftab);
 
@@ -647,7 +882,7 @@ public class UserPanel extends javax.swing.JFrame {
                 }
                 proftabheightv.setText(rs.getString(8)+" cms");
                 proftabweightv.setText(rs.getString(9)+" kgs");
-                }
+            }
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,e);
@@ -728,6 +963,56 @@ public class UserPanel extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_showequipmentActionPerformed
 
+    private void showclassesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showclassesActionPerformed
+        conn=MysqlConnect.ConnectDB();
+        String Sql="Select * from signup where CID=(Select CID from customer where CName=?)";
+        String Sql1="Select * from class where CLID=?";
+        try{
+            String id=null;
+            pst=conn.prepareStatement(Sql);
+            pst1=conn.prepareStatement(Sql1);
+            pst.setString(1,thisuser);
+            rs=pst.executeQuery();
+            if(rs.next()){
+                classtabsignupdatev.setText(rs.getString(3)+" (yyyy-mm-dd)");
+                id =rs.getString(2);
+                }
+            pst1.setString(1,id);
+            rs1=pst1.executeQuery();
+            if(rs1.next()){
+                classtabcostv.setText(rs1.getString(5)+" INR");
+                classtabdatev.setText(rs1.getString(3)+" (yyyy-mm-dd)");
+                classtabprereqv.setText(rs1.getString(6));
+                classtabroomnov.setText(rs1.getString(7));
+                classtabtimingsv.setText(rs1.getString(2));
+                classtabtitlev.setText(rs1.getString(4));
+            }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }//GEN-LAST:event_showclassesActionPerformed
+
+    private void joinclassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_joinclassActionPerformed
+        JoinNewClass w=new JoinNewClass();
+        w.setVisible(true);
+    }//GEN-LAST:event_joinclassActionPerformed
+
+    private void hireequipmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hireequipmentActionPerformed
+        HireEquipment w=new HireEquipment();
+        w.setVisible(true);
+    }//GEN-LAST:event_hireequipmentActionPerformed
+
+    private void changepasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changepasswordActionPerformed
+        ChangePassword w=new ChangePassword();
+        w.setVisible(true);
+    }//GEN-LAST:event_changepasswordActionPerformed
+
+    private void viewclassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewclassActionPerformed
+        ViewClass w=new ViewClass();
+        w.setVisible(true);
+    }//GEN-LAST:event_viewclassActionPerformed
+
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -760,7 +1045,19 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JLabel address;
     private javax.swing.JLabel age;
     private javax.swing.JLabel amount;
+    private javax.swing.JButton changepassword;
+    private javax.swing.JLabel classbackground;
+    private javax.swing.JPanel classtab;
+    private javax.swing.JTextField classtabcostv;
+    private javax.swing.JTextField classtabdatev;
+    private javax.swing.JTextField classtabprereqv;
+    private javax.swing.JTextField classtabroomnov;
+    private javax.swing.JTextField classtabsignupdatev;
+    private javax.swing.JTextField classtabtimingsv;
+    private javax.swing.JTextField classtabtitlev;
     private javax.swing.JLabel contact;
+    private javax.swing.JLabel cost;
+    private javax.swing.JLabel date;
     private javax.swing.JLabel dateofmem;
     private javax.swing.JLabel email;
     private javax.swing.JLabel equipbackground;
@@ -773,17 +1070,20 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JTextField equiptabrentv;
     private javax.swing.JLabel facility;
     private javax.swing.JLabel fees;
+    private javax.swing.JPanel formclass;
+    private javax.swing.JPanel formequipment;
+    private javax.swing.JPanel formmembership;
+    private javax.swing.JPanel formpayment;
     private javax.swing.JLabel gender;
     private javax.swing.JLabel gymnametitle;
     private javax.swing.JPanel header;
     private javax.swing.JLabel height;
+    private javax.swing.JButton hireequipment;
     private javax.swing.JLabel homebackground;
     private javax.swing.JLabel homecontent;
     private javax.swing.JPanel hometab;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JButton joinclass;
     private javax.swing.JLabel lastdateofpayment;
     private javax.swing.JButton logout;
     private javax.swing.JLabel membackground;
@@ -804,6 +1104,7 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JTextField paytablastdatev;
     private javax.swing.JTextField paytabmodev;
     private javax.swing.JTextField paytabstatusv;
+    private javax.swing.JLabel prerequisite;
     private javax.swing.JLabel profbackground;
     private javax.swing.JPanel proftab;
     private javax.swing.JTextField proftabaddressv;
@@ -815,13 +1116,19 @@ public class UserPanel extends javax.swing.JFrame {
     private javax.swing.JTextField proftabnamev;
     private javax.swing.JTextField proftabweightv;
     private javax.swing.JLabel rentaldate;
+    private javax.swing.JLabel roomno;
+    private javax.swing.JButton showclasses;
     private javax.swing.JButton showequipment;
     private javax.swing.JButton showmembership;
     private javax.swing.JButton showpayment;
     private javax.swing.JButton showprofile;
+    private javax.swing.JLabel signupdate;
     private javax.swing.JLabel status;
     private javax.swing.JTabbedPane tabs;
+    private javax.swing.JLabel timings;
+    private javax.swing.JLabel title;
     private javax.swing.JLabel validity;
+    private javax.swing.JButton viewclass;
     private javax.swing.JLabel weight;
     // End of variables declaration//GEN-END:variables
 }

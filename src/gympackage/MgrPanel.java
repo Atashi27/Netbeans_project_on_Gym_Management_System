@@ -101,8 +101,8 @@ String thisuser=Login.username;
             hometabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(hometabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         tabs.addTab("Home", hometab);
@@ -272,7 +272,7 @@ String thisuser=Login.username;
         classtab.add(addclass);
         addclass.setBounds(620, 380, 202, 58);
 
-        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg16.jpg")); // NOI18N
+        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg17.jpg")); // NOI18N
         classtab.add(classbackground);
         classbackground.setBounds(10, 20, 1100, 550);
 

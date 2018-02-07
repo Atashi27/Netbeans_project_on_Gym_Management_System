@@ -159,7 +159,7 @@ ResultSet rs=null;
     }//GEN-LAST:event_ResetActionPerformed
 
     private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
-                conn=MysqlConnect.ConnectDB();
+        conn=MysqlConnect.ConnectDB();
         String Sql="update customer set MEMID=(Select MEMID from membership where PackageLevel=?) where CName=?";
         try{
             pst=conn.prepareStatement(Sql);

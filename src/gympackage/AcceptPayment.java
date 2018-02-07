@@ -11,6 +11,7 @@ ResultSet rs=null;
 
     public AcceptPayment() {
         initComponents();
+        getCustomerName();
     }
 
     @SuppressWarnings("unchecked")
@@ -19,7 +20,6 @@ ResultSet rs=null;
 
         body = new javax.swing.JPanel();
         custname = new javax.swing.JLabel();
-        jtxtCName = new javax.swing.JTextField();
         money = new javax.swing.JLabel();
         jtxtMoney = new javax.swing.JTextField();
         jbtnReset = new javax.swing.JButton();
@@ -28,6 +28,7 @@ ResultSet rs=null;
         mode = new javax.swing.JLabel();
         header = new javax.swing.JLabel();
         back = new javax.swing.JButton();
+        jComboboxname = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -35,9 +36,6 @@ ResultSet rs=null;
 
         custname.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         custname.setText("Customer Name");
-
-        jtxtCName.setBackground(new java.awt.Color(204, 255, 204));
-        jtxtCName.setBorder(null);
 
         money.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         money.setText("Money");
@@ -76,6 +74,12 @@ ResultSet rs=null;
             }
         });
 
+        jComboboxname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboboxnameActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout bodyLayout = new javax.swing.GroupLayout(body);
         body.setLayout(bodyLayout);
         bodyLayout.setHorizontalGroup(
@@ -90,7 +94,7 @@ ResultSet rs=null;
                         .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bodyLayout.createSequentialGroup()
                                 .addComponent(mode)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                                 .addComponent(jtxtmode, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(bodyLayout.createSequentialGroup()
                                 .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -98,15 +102,15 @@ ResultSet rs=null;
                                     .addComponent(custname, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(102, 102, 102)
                                 .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jtxtMoney)
-                                    .addComponent(jtxtCName, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(jtxtMoney, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                                    .addComponent(jComboboxname, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addGap(0, 253, Short.MAX_VALUE))
             .addGroup(bodyLayout.createSequentialGroup()
                 .addGap(279, 279, 279)
                 .addComponent(jbtnSubmit)
                 .addGap(125, 125, 125)
                 .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(320, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bodyLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(back)
@@ -118,10 +122,10 @@ ResultSet rs=null;
                 .addGap(53, 53, 53)
                 .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
-                .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(custname, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtxtCName, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(custname, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                    .addComponent(jComboboxname))
+                .addGap(43, 43, 43)
                 .addGroup(bodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jtxtMoney, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bodyLayout.createSequentialGroup()
@@ -162,7 +166,7 @@ ResultSet rs=null;
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
         jtxtMoney.setText(null);
-        jtxtCName.setText(null);
+        jComboboxname.setSelectedIndex(0);
     }//GEN-LAST:event_jbtnResetActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
@@ -178,7 +182,7 @@ ResultSet rs=null;
             pst.setString(1,jtxtMoney.getText());
             pst.setDate(2,today);
             pst.setString(3,jtxtmode.getText());
-            pst.setString(4,jtxtCName.getText());
+            pst.setString(4,jComboboxname.getSelectedItem().toString());
             pst.executeUpdate();
             JOptionPane.showMessageDialog(null,"Entry Successful...!");
             this.dispose();
@@ -188,7 +192,27 @@ ResultSet rs=null;
         }
     }//GEN-LAST:event_jbtnSubmitActionPerformed
 
+    private void jComboboxnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboboxnameActionPerformed
 
+    }//GEN-LAST:event_jComboboxnameActionPerformed
+
+    public void getCustomerName(){
+        conn=MysqlConnect.ConnectDB();
+        String Sql="select * from customer";
+        try{
+            pst=conn.prepareStatement(Sql);
+            rs=pst.executeQuery();
+            while(rs.next()){
+                String hello= rs.getString("CName");
+                jComboboxname.addItem(hello);
+            }
+            //JOptionPane.showMessageDialog(null,"Entry Successful...!");
+            this.dispose();
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -222,9 +246,9 @@ ResultSet rs=null;
     private javax.swing.JPanel body;
     private javax.swing.JLabel custname;
     private javax.swing.JLabel header;
+    private javax.swing.JComboBox<String> jComboboxname;
     private javax.swing.JButton jbtnReset;
     private javax.swing.JButton jbtnSubmit;
-    private javax.swing.JTextField jtxtCName;
     private javax.swing.JTextField jtxtMoney;
     private javax.swing.JTextField jtxtmode;
     private javax.swing.JLabel mode;

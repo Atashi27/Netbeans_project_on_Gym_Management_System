@@ -114,7 +114,7 @@
                 <Component class="javax.swing.JLabel" name="homebackground">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\Users\DELL\Downloads\bg3.jpg"/>
+                      <Image iconType="3" name="/gympackage/image/bg3.jpg"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -182,7 +182,7 @@
             <Component class="javax.swing.JLabel" name="custbackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg6.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg6.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -241,7 +241,7 @@
             <Component class="javax.swing.JLabel" name="equipbackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg2.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg2.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -300,7 +300,7 @@
             <Component class="javax.swing.JLabel" name="membackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg7.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg7.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -359,7 +359,7 @@
             <Component class="javax.swing.JLabel" name="paybackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg11.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg11.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -418,7 +418,7 @@
             <Component class="javax.swing.JLabel" name="staffbackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg12.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg12.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -477,7 +477,7 @@
             <Component class="javax.swing.JLabel" name="classbackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg17.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg17.jpg"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -735,7 +735,7 @@
             <Component class="javax.swing.JLabel" name="profbackground">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\DELL\Downloads\bg19.jpg"/>
+                  <Image iconType="3" name="/gympackage/image/bg19.jpg"/>
                 </Property>
               </Properties>
               <Constraints>

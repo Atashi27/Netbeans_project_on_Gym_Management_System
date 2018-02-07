@@ -117,7 +117,7 @@ public class UserPanel extends javax.swing.JFrame {
         hometab.add(homecontent);
         homecontent.setBounds(320, 50, 490, 80);
 
-        homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
+        homebackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg3.jpg"))); // NOI18N
         hometab.add(homebackground);
         homebackground.setBounds(10, 40, 1090, 500);
 
@@ -230,7 +230,7 @@ public class UserPanel extends javax.swing.JFrame {
         memtab.add(formmembership);
         formmembership.setBounds(22, 75, 603, 390);
 
-        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg8.jpg")); // NOI18N
+        membackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg8.jpg"))); // NOI18N
         memtab.add(membackground);
         membackground.setBounds(670, 100, 400, 320);
 
@@ -323,7 +323,7 @@ public class UserPanel extends javax.swing.JFrame {
         paytab.add(formpayment);
         formpayment.setBounds(28, 100, 592, 334);
 
-        paybackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg9.png")); // NOI18N
+        paybackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg9.png"))); // NOI18N
         paytab.add(paybackground);
         paybackground.setBounds(660, 120, 400, 280);
 
@@ -419,7 +419,7 @@ public class UserPanel extends javax.swing.JFrame {
         equiptab.add(formequipment);
         formequipment.setBounds(31, 85, 608, 383);
 
-        equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg14.jpg")); // NOI18N
+        equipbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg14.jpg"))); // NOI18N
         equiptab.add(equipbackground);
         equipbackground.setBounds(680, 90, 380, 300);
 
@@ -438,7 +438,7 @@ public class UserPanel extends javax.swing.JFrame {
 
         tabs.addTab("My Equipment", equiptab);
 
-        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg16.jpg")); // NOI18N
+        classbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg16.jpg"))); // NOI18N
 
         formclass.setBackground(new java.awt.Color(222, 231, 231));
 
@@ -765,7 +765,7 @@ public class UserPanel extends javax.swing.JFrame {
         proftab.add(jPanel2);
         jPanel2.setBounds(22, 40, 640, 480);
 
-        profbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg4.png")); // NOI18N
+        profbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg4.png"))); // NOI18N
         proftab.add(profbackground);
         profbackground.setBounds(690, 30, 400, 390);
 

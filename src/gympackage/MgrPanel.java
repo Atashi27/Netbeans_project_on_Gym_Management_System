@@ -84,7 +84,7 @@ String thisuser=Login.username;
         jPanel2.add(homecontent);
         homecontent.setBounds(310, 50, 490, 80);
 
-        homebackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg3.jpg")); // NOI18N
+        homebackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg3.jpg"))); // NOI18N
         jPanel2.add(homebackground);
         homebackground.setBounds(0, 30, 1090, 500);
 
@@ -132,7 +132,7 @@ String thisuser=Login.username;
         custtab.add(viewcustomer);
         viewcustomer.setBounds(290, 460, 221, 63);
 
-        custbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg6.jpg")); // NOI18N
+        custbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg6.jpg"))); // NOI18N
         custtab.add(custbackground);
         custbackground.setBounds(10, 20, 1100, 530);
 
@@ -160,7 +160,7 @@ String thisuser=Login.username;
         equiptab.add(viewequipment);
         viewequipment.setBounds(300, 120, 229, 50);
 
-        equipbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg2.jpg")); // NOI18N
+        equipbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg2.jpg"))); // NOI18N
         equiptab.add(equipbackground);
         equipbackground.setBounds(10, 30, 1100, 520);
 
@@ -188,7 +188,7 @@ String thisuser=Login.username;
         memtab.add(upgrademembership);
         upgrademembership.setBounds(610, 430, 240, 63);
 
-        membackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg7.jpg")); // NOI18N
+        membackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg7.jpg"))); // NOI18N
         memtab.add(membackground);
         membackground.setBounds(10, 20, 1100, 550);
 
@@ -216,7 +216,7 @@ String thisuser=Login.username;
         paytab.add(acceptpayment);
         acceptpayment.setBounds(620, 360, 222, 66);
 
-        paybackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg11.jpg")); // NOI18N
+        paybackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg11.jpg"))); // NOI18N
         paytab.add(paybackground);
         paybackground.setBounds(11, 20, 1080, 550);
 
@@ -244,7 +244,7 @@ String thisuser=Login.username;
         stafftab.add(addstaff);
         addstaff.setBounds(580, 450, 204, 65);
 
-        staffbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg12.jpg")); // NOI18N
+        staffbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg12.jpg"))); // NOI18N
         stafftab.add(staffbackground);
         staffbackground.setBounds(11, 10, 1100, 570);
 
@@ -272,7 +272,7 @@ String thisuser=Login.username;
         classtab.add(addclass);
         addclass.setBounds(620, 380, 202, 58);
 
-        classbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg17.jpg")); // NOI18N
+        classbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg17.jpg"))); // NOI18N
         classtab.add(classbackground);
         classbackground.setBounds(10, 20, 1100, 550);
 
@@ -409,7 +409,7 @@ String thisuser=Login.username;
         proftab.add(jPanel1);
         jPanel1.setBounds(30, 50, 644, 495);
 
-        profbackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\bg19.jpg")); // NOI18N
+        profbackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gympackage/image/bg19.jpg"))); // NOI18N
         proftab.add(profbackground);
         profbackground.setBounds(710, 120, 360, 310);
 
